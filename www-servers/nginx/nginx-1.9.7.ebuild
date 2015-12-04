@@ -2,6 +2,10 @@
 
 EAPI=5
 
+#mogilefs
+#push
+#upstream_check 
+
 GENTOO_DEPEND_ON_PERL="no"
 
 declare -A mod{_a,_pn,_pv,_lic,_sha,_p,_uri,_wd,_doc}
@@ -29,7 +33,7 @@ mod_lic["encrypted_session"]="BSD-2"
 mod_p["encrypted_session"]="${mod_pn["encrypted_session"]}-${mod_sha["encrypted_session"]}"
 mod_uri["encrypted_session"]="https://github.com/${mod_a["encrypted_session"]}/${mod_pn["encrypted_session"]}/archive/${mod_sha["encrypted_session"]}.tar.gz"
 mod_wd["encrypted_session"]="${WORKDIR}/${mod_p["encrypted_session"]}"
-mod_doc["encrypted_session"]="README"
+#mod_doc["encrypted_session"]="README"
 
 # Fancy Index (https://github.com/aperezdc/ngx-fancyindex)
 mod_a["fancyindex"]="aperezdc"
@@ -45,9 +49,11 @@ mod_doc["fancyindex"]="README.rst HACKING.md CHANGELOG.md"
 mod_a["mogilefs"]="vkholodkov"
 mod_pn["mogilefs"]="nginx-mogilefs-module"
 mod_pv["mogilefs"]="1.0.4"
+mod_sha["mogilefs"]="020937ff4624fc31928adb51a5c43753bf256b34"
 mod_lic["mogilefs"]="BSD"
 mod_p["mogilefs"]="${mod_pn["mogilefs"]}-${mod_pv["mogilefs"]}"
-mod_uri["mogilefs"]="https://github.com/${mod_a["mogilefs"]}/${mod_pn["mogilefs"]}/archive/${mod_pv["mogilefs"]}.tar.gz"
+#mod_uri["mogilefs"]="https://github.com/${mod_a["mogilefs"]}/${mod_pn["mogilefs"]}/archive/${mod_pv["mogilefs"]}.tar.gz"
+mod_uri["mogilefs"]="https://github.com/${mod_a["mogilefs"]}/${mod_pn["mogilefs"]}/archive/${mod_sha["mogilefs"]}.tar.gz"
 mod_wd["mogilefs"]="${WORKDIR}/${mod_p["mogilefs"]}"
 mod_doc["mogilefs"]="README Changelog"
 
@@ -83,11 +89,13 @@ mod_doc["headers_more"]="README.markdown"
 
 # Push (http://pushmodule.slact.net)
 mod_a["push"]="slact"
-mod_pn["push"]="nginx_http_push_module"
+mod_pn["push"]="nchan"
 mod_pv["push"]="0.731"
+mod_sha["push"]="96f8c5fb654d465241f0dc0006e7d6c0352694a5"
 mod_lic["push"]="MIT"
-mod_p["push"]="${mod_pn["push"]}-${mod_pv["push"]}"
-mod_uri["push"]="https://github.com/${mod_a["push"]}/${mod_pn["push"]}/archive/v${mod_pv["push"]}.tar.gz"
+mod_p["push"]="${mod_pn["push"]}-${mod_sha["push"]}"
+#mod_uri["push"]="https://github.com/${mod_a["push"]}/${mod_pn["push"]}/archive/v${mod_pv["push"]}.tar.gz"
+mod_uri["push"]="https://github.com/${mod_a["push"]}/${mod_pn["push"]}/archive/${mod_sha["push"]}.tar.gz"
 mod_wd["push"]="${WORKDIR}/${mod_p["push"]}"
 mod_doc["push"]="README changelog.txt protocol.txt"
 
@@ -136,9 +144,10 @@ mod_doc["auth_pam"]="README.md ChangeLog"
 mod_a["upstream_check"]="yaoweibin"
 mod_pn["upstream_check"]="nginx_upstream_check_module"
 mod_pv["upstream_check"]="0.3.0"
+mod_sha["upstream_check"]="10782eaff51872a8f44e65eed89bbe286004bcb1"
 mod_lic["upstream_check"]="BSD-2"
-mod_p["upstream_check"]="${mod_pn["upstream_check"]}-${mod_pv["upstream_check"]}"
-mod_uri["upstream_check"]="https://github.com/${mod_a["upstream_check"]}/${mod_pn["upstream_check"]}/archive/v${mod_pv["upstream_check"]}.tar.gz"
+mod_p["upstream_check"]="${mod_pn["upstream_check"]}-${mod_sha["upstream_check"]}"
+mod_uri["upstream_check"]="https://github.com/${mod_a["upstream_check"]}/${mod_pn["upstream_check"]}/archive/${mod_sha["upstream_check"]}.tar.gz"
 mod_wd["upstream_check"]="${WORKDIR}/${mod_p["upstream_check"]}"
 mod_doc["upstream_check"]="README CHANGES"
 
@@ -192,16 +201,6 @@ mod_p["accept_language"]="${mod_pn["accept_language"]}-${mod_sha["accept_languag
 mod_uri["accept_language"]="https://github.com/${mod_a["accept_language"]}/${mod_pn["accept_language"]}/archive/${mod_sha["accept_language"]}.tar.gz"
 mod_wd["accept_language"]="${WORKDIR}/${mod_p["accept_language"]}"
 mod_doc["accept_language"]="README.textile"
-
-# Access Key (http://wiki.nginx.org/HttpAccessKeyModule)
-mod_a["access_key"]="gns"
-mod_pn["access_key"]="nginx-accesskey"
-mod_pv["access_key"]="2.0.3"
-mod_lic["access_key"]="BSD-2"
-mod_p["access_key"]="${mod_pn["access_key"]}-${mod_pv["access_key"]}"
-mod_uri["access_key"]="http://wiki.nginx.org/images/5/51/Nginx-accesskey-${mod_pv["access_key"]}.tar.gz"
-mod_wd["access_key"]="${WORKDIR}/${mod_p["access_key"]}"
-mod_doc["access_key"]=""
 
 # Concat (https://github.com/alibaba/nginx-http-concat)
 mod_a["concat"]="alibaba"
@@ -293,8 +292,7 @@ mods[standard]="access auth_basic autoindex browser charset empty_gif fastcgi
 	scgi ssi split_clients userid uwsgi"
 
 mods[optional]="addition auth_request dav degradation flv geoip gunzip gzip_static 
-	image_filter mp4 perl random_index realip secure_link ssl v2 stub_status sub xslt
-	mail mail_ssl_module"
+	image_filter mp4 perl random_index realip secure_link ssl v2 stub_status sub xslt"
 
 mods[mail]="imap pop3 smtp"
 
