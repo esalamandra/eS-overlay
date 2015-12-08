@@ -2,9 +2,6 @@
 
 EAPI=5
 
-#mogilefs
-#push
-#upstream_check 
 
 GENTOO_DEPEND_ON_PERL="no"
 
@@ -45,17 +42,15 @@ mod_uri["fancyindex"]="https://github.com/${mod_a["fancyindex"]}/${mod_pn["fancy
 mod_wd["fancyindex"]="${WORKDIR}/${mod_p["fancyindex"]}"
 mod_doc["fancyindex"]="README.rst HACKING.md CHANGELOG.md"
 
-# MogileFS Client (http://www.grid.net.ru/nginx/mogilefs.en.html)
-mod_a["mogilefs"]="vkholodkov"
-mod_pn["mogilefs"]="nginx-mogilefs-module"
-mod_pv["mogilefs"]="1.0.4"
-mod_sha["mogilefs"]="020937ff4624fc31928adb51a5c43753bf256b34"
-mod_lic["mogilefs"]="BSD"
-mod_p["mogilefs"]="${mod_pn["mogilefs"]}-${mod_pv["mogilefs"]}"
-#mod_uri["mogilefs"]="https://github.com/${mod_a["mogilefs"]}/${mod_pn["mogilefs"]}/archive/${mod_pv["mogilefs"]}.tar.gz"
-mod_uri["mogilefs"]="https://github.com/${mod_a["mogilefs"]}/${mod_pn["mogilefs"]}/archive/${mod_sha["mogilefs"]}.tar.gz"
-mod_wd["mogilefs"]="${WORKDIR}/${mod_p["mogilefs"]}"
-mod_doc["mogilefs"]="README Changelog"
+# # MogileFS Client (http://www.grid.net.ru/nginx/mogilefs.en.html)
+# mod_a["mogilefs"]="vkholodkov"
+# mod_pn["mogilefs"]="nginx-mogilefs-module"
+# mod_sha["mogilefs"]="020937ff4624fc31928adb51a5c43753bf256b34"
+# mod_lic["mogilefs"]="BSD"
+# mod_p["mogilefs"]="${mod_pn["mogilefs"]}-${mod_sha["mogilefs"]}"
+# mod_uri["mogilefs"]="https://github.com/${mod_a["mogilefs"]}/${mod_pn["mogilefs"]}/archive/${mod_sha["mogilefs"]}.tar.gz"
+# mod_wd["mogilefs"]="${WORKDIR}/${mod_p["mogilefs"]}"
+# mod_doc["mogilefs"]="README Changelog"
 
 # Phusion Passenger (https://github.com/phusion/passenger)
 #mod_a["passenger"]="phusion"
@@ -90,14 +85,12 @@ mod_doc["headers_more"]="README.markdown"
 # Push (http://pushmodule.slact.net)
 mod_a["push"]="slact"
 mod_pn["push"]="nchan"
-mod_pv["push"]="0.731"
-mod_sha["push"]="96f8c5fb654d465241f0dc0006e7d6c0352694a5"
+mod_pv["push"]="0.931"
+mod_sha["push"]="f0efe980bfb072265fb4333183e1106d8df23851"
 mod_lic["push"]="MIT"
 mod_p["push"]="${mod_pn["push"]}-${mod_sha["push"]}"
-#mod_uri["push"]="https://github.com/${mod_a["push"]}/${mod_pn["push"]}/archive/v${mod_pv["push"]}.tar.gz"
 mod_uri["push"]="https://github.com/${mod_a["push"]}/${mod_pn["push"]}/archive/${mod_sha["push"]}.tar.gz"
 mod_wd["push"]="${WORKDIR}/${mod_p["push"]}"
-mod_doc["push"]="README changelog.txt protocol.txt"
 
 # Cache Purge (http://labs.frickle.com/nginx_ngx_cache_purge)
 mod_a["cache_purge"]="FRiCKLE"
@@ -400,7 +393,7 @@ src_prepare() {
 	epatch "${FILESDIR}/${PN}-fix-perl-install-path.patch"
 
 	if use nginx_modules_external_upstream_check; then
-		epatch "${mod_wd[upstream_check]}/check_1.7.2+.patch"
+		epatch "${mod_wd[upstream_check]}/check_1.9.2+.patch"
 	fi
 
 	if use nginx_modules_external_lua ; then
