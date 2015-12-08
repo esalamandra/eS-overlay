@@ -1,4 +1,4 @@
-# Distributed under the terms of the GNU General Public License v2
+﻿# Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
 
@@ -53,14 +53,14 @@ mod_doc["fancyindex"]="README.rst HACKING.md CHANGELOG.md"
 # mod_doc["mogilefs"]="README Changelog"
 
 # Phusion Passenger (https://github.com/phusion/passenger)
-#mod_a["passenger"]="phusion"
-#mod_pn["passenger"]="passenger"
-#mod_pv["passenger"]="5.0.6"
-#mod_lic["passenger"]="MIT"
-#mod_p["passenger"]="${mod_pn["passenger"]}-release-${mod_pv["passenger"]}"
-#mod_uri["passenger"]="https://github.com/${mod_a["passenger"]}/${mod_pn["passenger"]}/archive/release-${mod_pv["passenger"]}.tar.gz"
-#mod_wd["passenger"]="${WORKDIR}/${mod_p["passenger"]}/ext/nginx"
-# mod_doc["passenger"]="README.md CHANGELOG"
+mod_a["passenger"]="phusion"
+mod_pn["passenger"]="passenger"
+mod_pv["passenger"]="stable-5.0"
+mod_lic["passenger"]="MIT"
+mod_p["passenger"]="${mod_pn["passenger"]}-${mod_pv["passenger"]}"
+mod_uri["passenger"]="https://github.com/${mod_a["passenger"]}/${mod_pn["passenger"]}/archive/${mod_pv["passenger"]}.tar.gz"
+mod_wd["passenger"]="${WORKDIR}/${mod_p["passenger"]}"
+mod_doc["passenger"]="README.md CHANGELOG"
 
 # Upload Progress (https://github.com/masterzen/nginx-upload-progress-module)
 mod_a["upload_progress"]="masterzen"
