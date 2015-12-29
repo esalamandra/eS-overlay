@@ -32,6 +32,161 @@ mod_uri["encrypted_session"]="https://github.com/${mod_a["encrypted_session"]}/$
 mod_wd["encrypted_session"]="${WORKDIR}/${mod_p["encrypted_session"]}"
 #mod_doc["encrypted_session"]="README"
 
+# Lua (https://github.com/openresty/lua-nginx-module)
+mod_a["lua"]="openresty"
+mod_pn["lua"]="lua-nginx-module"
+mod_pv["lua"]="0.9.19"
+mod_sha["lua"]="7b1ff62c2126b573ce3e1069639bd82922875801"
+mod_lic["lua"]="BSD-2"
+mod_p["lua"]="${mod_pn["lua"]}-${mod_sha["lua"]}"
+mod_uri["lua"]="https://github.com/${mod_a["lua"]}/${mod_pn["lua"]}/archive/${mod_sha["lua"]}.tar.gz"
+mod_wd["lua"]="${WORKDIR}/${mod_p["lua"]}"
+mod_doc["lua"]="README.markdown Changes"
+
+# Echo (https://github.com/openresty/echo-nginx-module)
+mod_a["echo"]="openresty"
+mod_pn["echo"]="echo-nginx-module"
+mod_pv["echo"]="0.58"
+mod_sha["echo"]="b2052b826e97b5cf0a3a85263fcd22546ff19d75"
+mod_lic["echo"]="BSD-2"
+mod_p["echo"]="${mod_pn["echo"]}-${mod_sha["echo"]}"
+mod_uri["echo"]="https://github.com/${mod_a["echo"]}/${mod_pn["echo"]}/archive/${mod_sha["echo"]}.tar.gz"
+mod_wd["echo"]="${WORKDIR}/${mod_p["echo"]}"
+mod_doc["echo"]="README.markdown"
+
+# Array var (https://github.com/openresty/array-var-nginx-module)
+# mod_a["array-var"]="openresty"
+# mod_pn["array-var"]="array-var-nginx-module"
+# mod_pv["array-var"]="0.04"
+# mod_sha["array-var"]="735e74a524334b3d2647c2818710a0a80d35c927"
+# mod_lic["array-var"]="BSD-2"
+# mod_p["array-var"]="${mod_pn["array-var"]}-${mod_sha["array-var"]}"
+# mod_uri["array-var"]="https://github.com/${mod_a["array-var"]}/${mod_pn["array-var"]}/archive/${mod_sha["array-var"]}.tar.gz"
+# mod_wd["array-var"]="${WORKDIR}/${mod_p["array-var"]}"
+# mod_doc["array-var"]="README.markdown"
+
+# Drizzle (https://github.com/openresty/drizzle-nginx-module)
+# mod_a["drizzle"]="openresty"
+# mod_pn["drizzle"]="drizzle-nginx-module"
+# mod_pv["drizzle"]=""
+# mod_sha["drizzle"]="ced57235d845dc36603fbf2721c2d3bc795aecb4"
+# mod_lic["drizzle"]="BSD-2"
+# mod_p["drizzle"]="${mod_pn["drizzle"]}-${mod_sha["drizzle"]}"
+# mod_uri["drizzle"]="https://github.com/${mod_a["drizzle"]}/${mod_pn["drizzle"]}/archive/${mod_sha["drizzle"]}.tar.gz"
+# mod_wd["drizzle"]="${WORKDIR}/${mod_p["drizzle"]}"
+# mod_doc["drizzle"]="README.markdown"
+
+# Stream-echo (https://github.com/openresty/stream-echo-nginx-module) 
+# mod_a["stream-echo"]="openresty"
+# mod_pn["stream-echo"]="stream-echo-nginx-module"
+# mod_pv["stream-echo"]=""
+# mod_sha["stream-echo"]="a3a518c66dcbde1f856dde48dc8f5a43b172a51f"
+# mod_lic["stream-echo"]="BSD-2"
+# mod_p["stream-echo"]="${mod_pn["stream-echo"]}-${mod_sha["stream-echo"]}"
+# mod_uri["stream-echo"]="https://github.com/${mod_a["stream-echo"]}/${mod_pn["stream-echo"]}/archive/${mod_sha["stream-echo"]}.tar.gz"
+# mod_wd["stream-echo"]="${WORKDIR}/${mod_p["stream-echo"]}"
+# mod_doc["stream-echo"]="README.markdown"
+
+# encrypted-session-nginx-module (https://github.com/openresty/encrypted-session-nginx-module)
+# mod_a["encrypted-session"]="openresty"
+# mod_pn["encrypted-session"]="encrypted-session-nginx-module"
+# mod_pv[""]=""
+# mod_sha["encrypted-session"]="a692cef53c7b8b882229e5dc4d262de2f85fffdc"
+# mod_lic["encrypted-session"]="BSD-2"
+# mod_p["encrypted-session"]="${mod_pn["encrypted-session"]}-${mod_sha["encrypted-session"]}"
+# mod_uri["encrypted-session"]="https://github.com/${mod_a["encrypted-session"]}/${mod_pn["encrypted-session"]}/archive/${mod_sha["encrypted-session"]}.tar.gz"
+# mod_wd["encrypted-session"]="${WORKDIR}/${mod_p["encrypted-session"]}"
+# mod_doc["encrypted-session"]="README.markdown"
+
+# Lua-upstream (https://github.com/openresty/lua-upstream-nginx-module) 
+# mod_a["echo"]="openresty"
+# mod_pn[""]="lua-upstream-nginx-module"
+# mod_pv[""]=""
+# mod_sha[""]="b25d27ca7a7cc3d3b21ef2c8d21d585ad85c868e"
+# mod_lic[""]="BSD-2"
+# mod_p[""]="${mod_pn[""]}-${mod_sha[""]}"
+# mod_uri[""]="https://github.com/${mod_a[""]}/${mod_pn[""]}/archive/${mod_sha[""]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p[""]}"
+# mod_doc[""]="README.markdown"
+
+# Rds-csv (https://github.com/openresty/rds-csv-nginx-module) 
+# mod_a["rds-csv"]="openresty"
+# mod_pn["rds-csv"]="rds-csv-nginx-module""
+# mod_pv[""]=""
+# mod_sha["rds-csv"]="f243822eae5f883e76dcbb5fdc6fc77cb4900e87"
+# mod_lic["rds-csv"]="BSD-2"
+# mod_p["rds-csv"]="${mod_pn["rds-csv"]}-${mod_sha["rds-csv"]}"
+# mod_uri["rds-csv"]="https://github.com/${mod_a["rds-csv"]}/${mod_pn["rds-csv"]}/archive/${mod_sha["rds-csv"]}.tar.gz"
+# mod_wd["rds-csv"]="${WORKDIR}/${mod_p["rds-csv"]}"
+# mod_doc["rds-csv"]="README.markdown"
+
+# Rds-json (https://github.com/openresty/rds-json-nginx-module) 
+# mod_a["rds-json"]="openresty"
+# mod_pn["rds-json"]="rds-json-nginx-module"
+# mod_pv[""]=""
+# mod_sha["rds-json"]="3c79c051ad1e2b984ea31a9e5a09a69a6db995fe"
+# mod_lic["rds-json"]="BSD-2"
+# mod_p["rds-json"]="${mod_pn["rds-json"]}-${mod_sha["rds-json"]}"
+# mod_uri["rds-json"]="https://github.com/${mod_a["rds-json"]}/${mod_pn["rds-json"]}/archive/${mod_sha["rds-json"]}.tar.gz"
+# mod_wd["rds-json"]="${WORKDIR}/${mod_p["rds-json"]}"
+# mod_doc["rds-json"]="README.markdown"
+
+
+# Redis2 (https://github.com/openresty/redis2-nginx-module)
+# mod_a["redis2"]="openresty"
+# mod_pn["redis2"]="redis2-nginx-module"
+# mod_pv[""]=""
+# mod_sha["redis2"]="335a604f44582ab69923a34f21ffd0c9395c2e60"
+# mod_lic["redis2"]="BSD-2"
+# mod_p["redis2"]="${mod_pn["redis2"]}-${mod_sha["redis2"]}"
+# mod_uri["redis2"]="https://github.com/${mod_a["redis2"]}/${mod_pn["redis2"]}/archive/${mod_sha["redis2"]}.tar.gz"
+# mod_wd["redis2"]="${WORKDIR}/${mod_p["redis2"]}"
+# mod_doc["redis2"]="README.markdown"
+
+# Replace-filter (https://github.com/openresty/replace-filter-nginx-module)
+# mod_a["replace-filter"]="openresty"
+# mod_pn["replace-filter"]"="replace-filter-nginx-module"
+# mod_pv[""]=""
+# mod_sha["replace-filter"]="4b7758f904eb1e49fc7f4b351ac9794d1722657c"
+# mod_lic["replace-filter"]="BSD-2"
+# mod_p["replace-filter"]="${mod_pn["replace-filter"]}-${mod_sha["replace-filter"]}"
+# mod_uri["replace-filter"]="https://github.com/${mod_a["replace-filter"]}/${mod_pn["replace-filter"]}/archive/${mod_sha["replace-filter"]}.tar.gz"
+# mod_wd["replace-filter"]="${WORKDIR}/${mod_p["replace-filter"]}"
+# mod_doc["replace-filter"]="README.markdown"
+
+# Set-misc (https://github.com/openresty/set-misc-nginx-module)
+# mod_a["set-misc"]="openresty"
+# mod_pn["set-misc"]="set-misc-nginx-module"
+# mod_pv[""]=""
+# mod_sha["set-misc"]="26572f6c38b62e94af41f0d50e7f373186e8da9b"
+# mod_lic["set-misc"]="BSD-2"
+# mod_p["set-misc"]="${mod_pn["set-misc"]}-${mod_sha["set-misc"]}"
+# mod_uri["set-misc"]="https://github.com/${mod_a["set-misc"]}/${mod_pn["set-misc"]}/archive/${mod_sha["set-misc"]}.tar.gz"
+# mod_wd["set-misc"]="${WORKDIR}/${mod_p["set-misc"]}"
+# mod_doc["set-misc"]="README.markdown"
+
+# Srcache (https://github.com/openresty/srcache-nginx-module)
+# mod_a["srcache"]="openresty"
+# mod_pn["srcache"]="srcache-nginx-module"
+# mod_pv[""]=""
+# mod_sha["srcache"]="e2695574c9767eb3e4bdca1714e1523b4846d89c"
+# mod_lic["srcache"]="BSD-2"
+# mod_p["srcache"]="${mod_pn["srcache"]}-${mod_sha["srcache"]}"
+# mod_uri["srcache"]="https://github.com/${mod_a["srcache"]}/${mod_pn["srcache"]}/archive/${mod_sha["srcache"]}.tar.gz"
+# mod_wd["srcache"]="${WORKDIR}/${mod_p["srcache"]}"
+# mod_doc["srcache"]="README.markdown"
+
+# XSS (https://github.com/openresty/xss-nginx-module)
+# mod_a["xss"]="openresty"
+# mod_pn["xss"]="xss-nginx-module"
+# mod_pv[""]=""
+# mod_sha["xss"]="617bb5f0deeaa42235bf2544889004de68618701"
+# mod_lic["xss"]="BSD-2"
+# mod_p["xss"]="${mod_pn["xss"]}-${mod_sha["xss"]}"
+# mod_uri["xss"]="https://github.com/${mod_a["xss"]}/${mod_pn["xss"]}/archive/${mod_sha["xss"]}.tar.gz"
+# mod_wd["xss"]="${WORKDIR}/${mod_p["xss"]}"
+# mod_doc["xss"]="README.markdown"
+
 # Fancy Index (https://github.com/aperezdc/ngx-fancyindex)
 mod_a["fancyindex"]="aperezdc"
 mod_pn["fancyindex"]="ngx-fancyindex"
@@ -112,16 +267,6 @@ mod_uri["slowfs_cache"]="https://github.com/${mod_a["slowfs_cache"]}/${mod_pn["s
 mod_wd["slowfs_cache"]="${WORKDIR}/${mod_p["slowfs_cache"]}"
 mod_doc["slowfs_cache"]="README.md CHANGES"
 
-# Lua (https://github.com/openresty/lua-nginx-module)
-mod_a["lua"]="openresty"
-mod_pn["lua"]="lua-nginx-module"
-mod_pv["lua"]="0.9.19"
-mod_sha["lua"]="7b1ff62c2126b573ce3e1069639bd82922875801"
-mod_lic["lua"]="BSD-2"
-mod_p["lua"]="${mod_pn["lua"]}-${mod_sha["lua"]}"
-mod_uri["lua"]="https://github.com/${mod_a["lua"]}/${mod_pn["lua"]}/archive/${mod_sha["lua"]}.tar.gz"
-mod_wd["lua"]="${WORKDIR}/${mod_p["lua"]}"
-mod_doc["lua"]="README.markdown Changes"
 
 # Auth PAM (http://web.iti.upv.es/~sto/nginx)
 mod_a["auth_pam"]="stogh"
@@ -205,16 +350,6 @@ mod_uri["concat"]="https://github.com/${mod_a["concat"]}/${mod_pn["concat"]}/arc
 mod_wd["concat"]="${WORKDIR}/${mod_p["concat"]}"
 mod_doc["concat"]="README.md"
 
-# Echo (https://github.com/openresty/echo-nginx-module)
-mod_a["echo"]="openresty"
-mod_pn["echo"]="echo-nginx-module"
-mod_pv["echo"]="0.58"
-mod_sha["echo"]="b2052b826e97b5cf0a3a85263fcd22546ff19d75"
-mod_lic["echo"]="BSD-2"
-mod_p["echo"]="${mod_pn["echo"]}-${mod_sha["echo"]}"
-mod_uri["echo"]="https://github.com/${mod_a["echo"]}/${mod_pn["echo"]}/archive/${mod_sha["echo"]}.tar.gz"
-mod_wd["echo"]="${WORKDIR}/${mod_p["echo"]}"
-mod_doc["echo"]="README.markdown"
 
 # ModSecurity (https://www.modsecurity.org/download.html)
 mod_a["modsecurity"]="modsecurity"
@@ -266,6 +401,144 @@ mod_doc["ajp"]="README"
 #####
 ####################################
 
+#mod_a["test"]="test"
+#mod_pn["test"]="ngx_devel_kit"
+#mod_pv["test"]="0.2.19"
+#mod_sha["test"]="bf6cd93f2098b59260de8d494f0f4b1f11a84627"
+#mod_lic["test"]="BSD"
+#mod_p["test"]="${mod_pn["ndk"]}-${mod_pv["ndk"]}"
+#mod_uri["test"]="https://github.com/${mod_a["ndk"]}/${mod_pn["ndk"]}/archive/v${mod_pv["ndk"]}.tar.gz"
+#mod_wd["test"]="${WORKDIR}/${mod_p["ndk"]}"
+#mod_doc["test"]="README README_AUTO_LIB"
+
+############################################################################
+##
+##  ##########    ######            ########        ######
+##      ##       ########           ##    ####     ########
+##      ##      ####  ####          ##      ##    ####  ####
+##      ##      ##      ##          ##      ##    ##      ##
+##      ##      ##      ##          ##      ##    ##      ##          
+##      ##      ####  ####          ##      ##    ####  ####
+##      ##       ########           ##    ####     ########   
+##      ##        ######            ########        ######
+##      
+############################################################################
+
+# Audio Track for HTTP Live Streaming
+# href="https://github.com/flavioribeiro/nginx-audio-track-for-hls-module"
+# HTTP Digest Authentication
+# https://github.com/atomx/nginx-http-auth-digest
+# ngx_http_auth_request_module
+# http://mdounin.ru/hg/ngx_http_auth_request_module/
+# ngx_auto_lib
+# https://github.com/simpl/ngx_auto_lib
+# ngx_aws_auth
+# https://github.com/anomalizer/ngx_aws_auth
+# Circle Gif
+# href="https://github.com/evanmiller/nginx_circle_gif"
+# nginx-backtrace
+# https://github.com/alibaba/nginx-backtrace
+# href="Nchan/"><em>Nchan</em>
+# href="https://github.com/slact/nchan">slact/nchan
+# href="https://github.com/nbs-system/naxsi">nbs-system/naxsi
+# href="https://github.com/kr/nginx-notice">kr/nginx-notice
+# href="https://github.com/kyprizel/nginx_ocsp_proxy-module">kyprizel/nginx_ocsp_proxy-module
+# href="https://github.com/apcera/nginx-openssl-version">apcera/nginx-openssl-version
+# href="owner_match/"><em>Owner Match</em>
+# href="https://heiher.info/1755.html">Download
+# href="https://github.com/pagespeed/ngx_pagespeed">pagespeed/ngx_pagespeed
+# href="https://github.com/replay/ngx_http_php_session">replay/ngx_http_php_session
+# href="https://github.com/replay/ngx_http_php_memcache_standard_balancer">replay/ngx_http_php_memcache_standard_balancer
+# href="http://labs.frickle.com/nginx_ngx_postgres">Download
+# href="http://www.vanko.me/book/page/pubcookie-module-nginx">Download
+# href="clojure/"><em>Clojure</em>
+# href="https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
+# href="consistent_hash/"><em>Upstream Consistent Hash</em>
+# href="https://github.com/replay/ngx_http_consistent_hash">replay/ngx_http_consistent_hash
+# href="domain_resolve/"><em>Upstream Domain Resolve</em>
+# href="https://github.com/wdaike/ngx_upstream_jdomain/">wdaike/ngx_upstream_jdomain/
+# href="https://github.com/kali/nginx-dynamic-etags">kali/nginx-dynamic-etags
+# href="https://github.com/yzprofile/ngx_http_dyups_module">yzprofile/ngx_http_dyups_module
+# href="https://github.com/bpaquet/ngx_http_enhanced_memcached_module">bpaquet/ngx_http_enhanced_memcached_module
+# href="https://github.com/vkholodkov/nginx-eval-module">vkholodkov/nginx-eval-module
+# href="https://github.com/ezmobius/nginx-ey-balancer">ezmobius/nginx-ey-balancer
+# href="fair_balancer/"><em>Upstream Fair Balancer</em>
+# href="https://github.com/gnosek/nginx-upstream-fair">gnosek/nginx-upstream-fair
+# href="foot_filter/"><em>Foot Filter</em>
+# href="https://github.com/alibaba/nginx-http-footer-filter">alibaba/nginx-http-footer-filter
+# href="https://github.com/flygoast/ngx_http_footer_if_filter/">flygoast/ngx_http_footer_if_filter/
+# href="form_input/"><em>Form Input</em>
+# href="https://github.com/calio/form-input-nginx-module">calio/form-input-nginx-module
+# href="https://github.com/leev/ngx_http_geoip2_module">leev/ngx_http_geoip2_module
+# href="https://github.com/mdirolf/nginx-gridfs">mdirolf/nginx-gridfs
+# href="groovy_handler/"><em>Groovy</em>
+# href="https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
+# href="healthcheck/"><em>HTTP Healthcheck</em>
+# href="https://github.com/cep21/healthcheck_nginx_upstreams">cep21/healthcheck_nginx_upstreams
+# href="https://github.com/Lax/ngx_http_accounting_module">Lax/ngx_http_accounting_module
+# href="https://github.com/calio/iconv-nginx-module">calio/iconv-nginx-module
+# href="https://github.com/flygoast/ngx_http_internal_redirect/">flygoast/ngx_http_internal_redirect/
+# href="https://github.com/chrislim2888/ip2location-nginx">chrislim2888/ip2location-nginx
+# href="java_handler/"><em>Java</em>
+# href="https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
+# href="https://github.com/peter-leonov/ngx_http_js_module#readme">peter-leonov/ngx_http_js_module#readme
+# href="ketama_chash/"><em>Upstream Ketama CHash</em>
+# href="https://github.com/flygoast/ngx_http_upstream_ketama_chash/releases/">flygoast/ngx_http_upstream_ketama_chash/releases/
+# href="https://github.com/cfsego/limit_upload_rate">cfsego/limit_upload_rate
+# href="https://github.com/cfsego/nginx-limit-upstream/">cfsego/nginx-limit-upstream/
+# href="https://github.com/cfsego/ngx_log_if/">cfsego/ngx_log_if/
+# href="log_zmq/"><em>Log ZMQ</em>
+# href="https://github.com/sapo/nginx-log-zmq/">sapo/nginx-log-zmq/
+# href="https://github.com/replay/ngx_http_lower_upper_case">replay/ngx_http_lower_upper_case
+
+
+# href="https://github.com/kainswor/nginx_md5_filter">kainswor/nginx_md5_filter
+# href="https://github.com/openresty/memc-nginx-module">openresty/memc-nginx-module
+# href="https://github.com/simpl/ngx_mongo">simpl/ngx_mongo
+# href="rdns/"><em>HTTP rDNS</em>
+# href="https://github.com/flant/nginx-http-rdns">flant/nginx-http-rdns
+# href="redis/"><em>HTTP Redis</em>
+# href="http://people.FreeBSD.ORG/~osa/ngx_http_redis-0.3.5.tar.gz">Download
+# href="https://github.com/yuri-gushin/Roboo/downloads">yuri-gushin/Roboo/downloads
+# href="rrd_graph/"><em>RRD Graph</em>
+# href="https://github.com/evanmiller/mod_rrd_graph">evanmiller/mod_rrd_graph
+# href="https://github.com/mneudert/sass-nginx-module">mneudert/sass-nginx-module
+# href="secure_download/"><em>Secure Download</em>
+# href="https://github.com/replay/ngx_http_secure_download">replay/ngx_http_secure_download
+# href="https://github.com/wandenberg/nginx-selective-cache-purge-module">wandenberg/nginx-selective-cache-purge-module
+# href="https://github.com/liseen/set-cconv-nginx-module">liseen/set-cconv-nginx-module
+# href="https://github.com/simpl/ngx_http_set_hash">simpl/ngx_http_set_hash
+# href="https://github.com/simpl/ngx_http_set_lang/downloads">simpl/ngx_http_set_lang/downloads
+# href="http://code.google.com/p/nginx-sflow-module/downloads/list">Download
+# href="https://github.com/cubicdaiya/ngx_small_light">cubicdaiya/ngx_small_light
+# href="https://github.com/wandenberg/nginx-sorted-querystring-module">wandenberg/nginx-sorted-querystring-module
+# href="https://github.com/reeteshranjan/sphinx2-nginx-module">reeteshranjan/sphinx2-nginx-module
+# href="https://github.com/stnoonan/spnego-http-auth-nginx-module">stnoonan/spnego-http-auth-nginx-module
+# href="https://github.com/mikewest/nginx-static-etags">mikewest/nginx-static-etags
+# href="https://github.com/zebrafishlabs/nginx-statsd">zebrafishlabs/nginx-statsd
+# href="https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz">
+# </span>nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz
+# href="https://github.com/Qihoo360/ngx_http_subrange_module">Qihoo360/ngx_http_subrange_module
+# href="substitutions/"><em>Substitutions</em>
+# href="https://github.com/yaoweibin/ngx_http_substitutions_filter_module">yaoweibin/ngx_http_substitutions_filter_module
+# href="https://github.com/reeteshranjan/summarizer-nginx-module">reeteshranjan/summarizer-nginx-module
+# href="http://labs.frickle.com/nginx_ngx_supervisord">Download
+# href="https://github.com/alibaba/nginx-http-sysguard">alibaba/nginx-http-sysguard
+# href="https://github.com/yaoweibin/nginx_tcp_proxy_module">yaoweibin/nginx_tcp_proxy_module
+# href="https://github.com/kyprizel/testcookie-nginx-module">kyprizel/testcookie-nginx-module
+# href="https://github.com/flygoast/ngx_http_types_filter">flygoast/ngx_http_types_filter
+# href="https://github.com/youzee/nginx-unzip-module">youzee/nginx-unzip-module
+# href="upload/"><em>Upload</em>
+# href="https://github.com/vkholodkov/nginx-upload-module">vkholodkov/nginx-upload-module
+# href="https://github.com/vozlt/nginx-module-url">vozlt/nginx-module-url
+# href="user_agent/"><em>User Agent</em>
+# href="https://github.com/alibaba/nginx-http-user-agent">alibaba/nginx-http-user-agent
+# href="https://github.com/wandenberg/nginx-video-thumbextractor-module">wandenberg/nginx-video-thumbextractor-module
+# href="https://github.com/vozlt/nginx-module-vts">vozlt/nginx-module-vts
+
+#
+# href="zip/"><em>Zip</em>
+# href="https://github.com/evanmiller/mod_zip">evanmiller/mod_zip
 
 inherit eutils ssl-cert toolchain-funcs perl-module flag-o-matic user versionator
 
@@ -291,7 +564,7 @@ mods[upstream]="upstream_hash upstream_ip_hash upstream_keepalive upstream_least
 
 mods[standard]="access auth_basic autoindex browser charset empty_gif fastcgi
 	geo gzip limit_conn limit_req map memcached proxy referer rewrite
-	scgi ssi split_clients userid uwsgi"
+	scgi ssi split_clients userid uwsgi slice"
 
 mods[optional]="addition auth_request dav degradation flv geoip gunzip gzip_static 
 	image_filter mp4 perl random_index realip secure_link ssl v2 stub_status sub xslt"
