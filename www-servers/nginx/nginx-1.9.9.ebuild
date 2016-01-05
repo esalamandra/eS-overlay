@@ -1,4 +1,4 @@
-# Distributed under the terms of the GNU General Public License v2
+﻿# Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
 
@@ -715,7 +715,6 @@ RDEPEND="http-cache? ( dev-libs/openssl )
 		luajit? ( dev-lang/luajit ) )
 	nginx_modules_external_auth_pam? ( virtual/pam )
 	nginx_modules_external_metrics? ( dev-libs/yajl )
-	nginx_modules_external_drizzle? ( dev-db/drizzle )
 	nginx_modules_external_dav_ext? ( dev-libs/expat )
 	nginx_modules_external_modsecurity? ( dev-libs/libxml2
 		dev-libs/apr-util
