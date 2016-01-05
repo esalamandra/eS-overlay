@@ -55,18 +55,6 @@ mod_doc["echo"]="README.markdown"
 # mod_wd["array-var"]="${WORKDIR}/${mod_p["array-var"]}"
 # mod_doc["array-var"]="README.markdown"
 
-# # Drizzle (https://github.com/openresty/drizzle-nginx-module)
-# require libdrizzle
-mod_a["drizzle"]="openresty"
-mod_pn["drizzle"]="drizzle-nginx-module"
-# # mod_pv["drizzle"]=""
-mod_sha["drizzle"]="ced57235d845dc36603fbf2721c2d3bc795aecb4"
-mod_lic["drizzle"]="BSD-2"
-mod_p["drizzle"]="${mod_pn["drizzle"]}-${mod_sha["drizzle"]}"
-mod_uri["drizzle"]="https://github.com/${mod_a["drizzle"]}/${mod_pn["drizzle"]}/archive/${mod_sha["drizzle"]}.tar.gz"
-mod_wd["drizzle"]="${WORKDIR}/${mod_p["drizzle"]}"
-#mod_doc["drizzle"]="README.markdown"
-
 # # # Stream-echo (https://github.com/openresty/stream-echo-nginx-module) 
 # more undefined references to `ngx_stream_core_module' follow
 # mod_a["stream-echo"]="openresty"
@@ -343,7 +331,6 @@ mod_uri["concat"]="https://github.com/${mod_a["concat"]}/${mod_pn["concat"]}/arc
 mod_wd["concat"]="${WORKDIR}/${mod_p["concat"]}"
 mod_doc["concat"]="README.md"
 
-
 # ModSecurity (https://www.modsecurity.org/download.html)
 mod_a["modsecurity"]="modsecurity"
 mod_pn["modsecurity"]="modsecurity"
@@ -417,88 +404,245 @@ mod_doc["ajp"]="README"
 #mod_wd[""]="${WORKDIR}/${mod_p["ndk"]}"
 #mod_doc[""]="README README_AUTO_LIB"
 
+#mod_a["Live_audio_track"]="flavioribeiro"
 # Audio Track for HTTP Live Streaming   (https://github.com/flavioribeiro/nginx-audio-track-for-hls-module")
+
+#mod_a[""]=""
 # HTTP Digest Authentication            (https://github.com/atomx/nginx-http-auth-digest)
+
+#mod_a[""]=""
 # HTTP _auth_request_module             (http://mdounin.ru/hg/ngx_http_auth_request_module)
+
+#mod_a[""]=""
 # Auto _lib                             (https://github.com/simpl/ngx_auto_lib)
+
+#mod_a[""]=""
 # Aws _auth                             (https://github.com/anomalizer/ngx_aws_auth)
+
+#mod_a[""]=""
 # Circle Gif                            (https://github.com/evanmiller/nginx_circle_gif)
+
+#mod_a[""]=""
 # Nginx-backtrace                       (https://github.com/alibaba/nginx-backtrace)
+
+#mod_a[""]=""
 # Nchan                                 (https://github.com/slact/nchan">slact/nchan
-# Naxsi                                 (https://github.com/nbs-system/naxsi">nbs-system/naxsi
+
+#mod_a[""]=""
 # Notice                                (https://github.com/kr/nginx-notice">kr/nginx-notice
+
+#mod_a[""]=""
 # Ocsp proxy                            (https://github.com/kyprizel/nginx_ocsp_proxy-module">kyprizel/nginx_ocsp_proxy-module
+
+#mod_a[""]=""
 # Openssl-version                       (https://github.com/apcera/nginx-openssl-version">apcera/nginx-openssl-version
+
+#mod_a[""]=""
 # Owner Match                           (https://heiher.info/1755.html">Download
+
+#mod_a[""]=""
 # PHP Session                           (https://github.com/replay/ngx_http_php_session">replay/ngx_http_php_session
+
+#mod_a[""]=""
 # Php memcache standard balancer        (https://github.com/replay/ngx_http_php_memcache_standard_balancer">replay/ngx_http_php_memcache_standard_balancer
+
+#mod_a[""]=""
 # Postgres                              (http://labs.frickle.com/nginx_ngx_postgres">Download
+
+#mod_a[""]=""
 # Pubcookie                             (http://www.vanko.me/book/page/pubcookie-module-nginx">Download
+
+#mod_a[""]=""
 # Clojure                               (https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
+
+#mod_a[""]=""
 # Upstream Consistent Hash              (https://github.com/replay/ngx_http_consistent_hash">replay/ngx_http_consistent_hash
+
+#mod_a[""]=""
 # Upstream Domain Resolve               (https://github.com/wdaike/ngx_upstream_jdomain/">wdaike/ngx_upstream_jdomain/
+
+#mod_a[""]=""
 # Upstream Fair Balancer                (https://github.com/gnosek/nginx-upstream-fair">gnosek/nginx-upstream-fair
+
+#mod_a[""]=""
 # Dynamic-etags                         (https://github.com/kali/nginx-dynamic-etags">kali/nginx-dynamic-etags
+
+#mod_a[""]=""
 # Dyups                                 (https://github.com/yzprofile/ngx_http_dyups_module">yzprofile/ngx_http_dyups_module
+
+#mod_a[""]=""
 # Enhanced memcached                    (https://github.com/bpaquet/ngx_http_enhanced_memcached_module">bpaquet/ngx_http_enhanced_memcached_module
+
+#mod_a[""]=""
 # Eval                                  (https://github.com/vkholodkov/nginx-eval-module">vkholodkov/nginx-eval-module
+
+#mod_a[""]=""
 # Ey-balancer                           (https://github.com/ezmobius/nginx-ey-balancer">ezmobius/nginx-ey-balancer
+
+#mod_a[""]=""
 # Foot Filter                           (https://github.com/alibaba/nginx-http-footer-filter">alibaba/nginx-http-footer-filter
+
+#mod_a[""]=""
 # Footer if filter                      (https://github.com/flygoast/ngx_http_footer_if_filter/">flygoast/ngx_http_footer_if_filter/
+
+#mod_a[""]=""
 # Form Input                            (https://github.com/calio/form-input-nginx-module">calio/form-input-nginx-module
+
+#mod_a[""]=""
 # Geoip2                                (https://github.com/leev/ngx_http_geoip2_module">leev/ngx_http_geoip2_module
+
+#mod_a[""]=""
 # Gridfs                                (https://github.com/mdirolf/nginx-gridfs">mdirolf/nginx-gridfs
+
+#mod_a[""]=""
 # Groovy                                (https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
+
+#mod_a[""]=""
 # HTTP Healthcheck                      (https://github.com/cep21/healthcheck_nginx_upstreams">cep21/healthcheck_nginx_upstreams
+
+#mod_a[""]=""
 # HTTP accounting                       (https://github.com/Lax/ngx_http_accounting_module">Lax/ngx_http_accounting_module
-# Iconv (https://github.com/calio/iconv-nginx-module">calio/iconv-nginx-module
-# Internal redirect (https://github.com/flygoast/ngx_http_internal_redirect/">flygoast/ngx_http_internal_redirect/
-# Ip2location (https://github.com/chrislim2888/ip2location-nginx">chrislim2888/ip2location-nginx
-# Java (https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
-# JS (https://github.com/peter-leonov/ngx_http_js_module#readme">peter-leonov/ngx_http_js_module#readme
-# Upstream Ketama CHash (https://github.com/flygoast/ngx_http_upstream_ketama_chash/releases/">flygoast/ngx_http_upstream_ketama_chash/releases/
-# Limit upload rate (https://github.com/cfsego/limit_upload_rate">cfsego/limit_upload_rate
-# Limit upstream (https://github.com/cfsego/nginx-limit-upstream/">cfsego/nginx-limit-upstream/
-# Log if (https://github.com/cfsego/ngx_log_if/">cfsego/ngx_log_if/
-# Log ZMQ (https://github.com/sapo/nginx-log-zmq/">sapo/nginx-log-zmq/
-# Lower upper case (https://github.com/replay/ngx_http_lower_upper_case">replay/ngx_http_lower_upper_case
-# Md5 filter(https://github.com/kainswor/nginx_md5_filter">kainswor/nginx_md5_filter
-# Memc (https://github.com/openresty/memc-nginx-module">openresty/memc-nginx-module
-# Mongo (https://github.com/simpl/ngx_mongo">simpl/ngx_mongo
-# HTTP rDNS (https://github.com/flant/nginx-http-rdns">flant/nginx-http-rdns
-# HTTP Redis (http://people.FreeBSD.ORG/~osa/ngx_http_redis-0.3.5.tar.gz">Download
-# Rooboo (https://github.com/yuri-gushin/Roboo/downloads">yuri-gushin/Roboo/downloads
-# RRD Graph (https://github.com/evanmiller/mod_rrd_graph">evanmiller/mod_rrd_graph
-# Sass (https://github.com/mneudert/sass-nginx-module">mneudert/sass-nginx-module
-# Secure Download (https://github.com/replay/ngx_http_secure_download">replay/ngx_http_secure_download
-# Selective cache purge (https://github.com/wandenberg/nginx-selective-cache-purge-module">wandenberg/nginx-selective-cache-purge-module
-# Set-cconv (https://github.com/liseen/set-cconv-nginx-module">liseen/set-cconv-nginx-module
-# Set hash(https://github.com/simpl/ngx_http_set_hash">simpl/ngx_http_set_hash
-# Set Lang(https://github.com/simpl/ngx_http_set_lang/downloads">simpl/ngx_http_set_lang/downloads
-# Sflow (http://code.google.com/p/nginx-sflow-module/downloads/list">Download
-# Small light (https://github.com/cubicdaiya/ngx_small_light">cubicdaiya/ngx_small_light
-# Sorted-querystring (https://github.com/wandenberg/nginx-sorted-querystring-module">wandenberg/nginx-sorted-querystring-module
-# Sphinx2 (https://github.com/reeteshranjan/sphinx2-nginx-module">reeteshranjan/sphinx2-nginx-module
-# Auth spnego  (https://github.com/stnoonan/spnego-http-auth-nginx-module">stnoonan/spnego-http-auth-nginx-module
-# Static-etags (https://github.com/mikewest/nginx-static-etags">mikewest/nginx-static-etags
-# Statsd (https://github.com/zebrafishlabs/nginx-statsd">zebrafishlabs/nginx-statsd
-# Sticky (https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz">
-# </span>nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz
-# Subrange (https://github.com/Qihoo360/ngx_http_subrange_module">Qihoo360/ngx_http_subrange_module
-# Substitutions (https://github.com/yaoweibin/ngx_http_substitutions_filter_module">yaoweibin/ngx_http_substitutions_filter_module
-# Summarizer (https://github.com/reeteshranjan/summarizer-nginx-module">reeteshranjan/summarizer-nginx-module
-# Supervisord (http://labs.frickle.com/nginx_ngx_supervisord">Download
-# Sysguard (https://github.com/alibaba/nginx-http-sysguard">alibaba/nginx-http-sysguard
-# Tcp_proxy (https://github.com/yaoweibin/nginx_tcp_proxy_module">yaoweibin/nginx_tcp_proxy_module
-# Testcookie (https://github.com/kyprizel/testcookie-nginx-module">kyprizel/testcookie-nginx-module
-# Types_filter (https://github.com/flygoast/ngx_http_types_filter">flygoast/ngx_http_types_filter
-# Unzip (https://github.com/youzee/nginx-unzip-module">youzee/nginx-unzip-module
-# Upload (https://github.com/vkholodkov/nginx-upload-module">vkholodkov/nginx-upload-module
-# URL (https://github.com/vozlt/nginx-module-url">vozlt/nginx-module-url
-# User Agent (https://github.com/alibaba/nginx-http-user-agent">alibaba/nginx-http-user-agent
-# Video thumbextractor (https://github.com/wandenberg/nginx-video-thumbextractor-module">wandenberg/nginx-video-thumbextractor-module
-# VTS (https://github.com/vozlt/nginx-module-vts">vozlt/nginx-module-vts
-# Zip (https://github.com/evanmiller/mod_zip">evanmiller/mod_zip
+
+#mod_a[""]=""
+# Iconv                                 (https://github.com/calio/iconv-nginx-module">calio/iconv-nginx-module
+
+#mod_a[""]=""
+# Internal redirect                     (https://github.com/flygoast/ngx_http_internal_redirect/">flygoast/ngx_http_internal_redirect/
+
+#mod_a[""]=""
+# Ip2location                           (https://github.com/chrislim2888/ip2location-nginx">chrislim2888/ip2location-nginx
+
+#mod_a[""]=""
+# Java                                  (https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
+
+#mod_a[""]=""
+# JS                                    (https://github.com/peter-leonov/ngx_http_js_module#readme">peter-leonov/ngx_http_js_module#readme
+
+#mod_a[""]=""
+# Upstream Ketama CHash                 (https://github.com/flygoast/ngx_http_upstream_ketama_chash/releases/">flygoast/ngx_http_upstream_ketama_chash/releases/
+
+#mod_a[""]=""
+# Limit upload rate                     (https://github.com/cfsego/limit_upload_rate">cfsego/limit_upload_rate
+
+#mod_a[""]=""
+# Limit upstream                        (https://github.com/cfsego/nginx-limit-upstream/">cfsego/nginx-limit-upstream/
+
+#mod_a[""]=""
+# Log if                                (https://github.com/cfsego/ngx_log_if/">cfsego/ngx_log_if/
+
+#mod_a[""]=""
+# Log ZMQ                               (https://github.com/sapo/nginx-log-zmq/">sapo/nginx-log-zmq/
+
+#mod_a[""]=""
+# Lower upper case                      (https://github.com/replay/ngx_http_lower_upper_case">replay/ngx_http_lower_upper_case
+
+#mod_a[""]=""
+# Md5 filter                            (https://github.com/kainswor/nginx_md5_filter">kainswor/nginx_md5_filter
+
+#mod_a[""]=""
+# Memc                                  (https://github.com/openresty/memc-nginx-module">openresty/memc-nginx-module
+
+#mod_a[""]=""
+# Mongo                                 (https://github.com/simpl/ngx_mongo">simpl/ngx_mongo
+
+#mod_a[""]=""
+# HTTP rDNS                             (https://github.com/flant/nginx-http-rdns">flant/nginx-http-rdns
+
+#mod_a[""]=""
+# HTTP Redis                            (http://people.FreeBSD.ORG/~osa/ngx_http_redis-0.3.5.tar.gz">Download
+
+#mod_a[""]=""
+# Rooboo                                (https://github.com/yuri-gushin/Roboo/downloads">yuri-gushin/Roboo/downloads
+
+#mod_a[""]=""
+# RRD Graph                             (https://github.com/evanmiller/mod_rrd_graph">evanmiller/mod_rrd_graph
+
+#mod_a[""]=""
+# Sass                                  (https://github.com/mneudert/sass-nginx-module">mneudert/sass-nginx-module
+
+#mod_a[""]=""
+# Secure Download                       (https://github.com/replay/ngx_http_secure_download">replay/ngx_http_secure_download
+
+#mod_a[""]=""
+# Selective cache purge 	        (https://github.com/wandenberg/nginx-selective-cache-purge-module">wandenberg/nginx-selective-cache-purge-module
+
+#mod_a[""]=""
+# Set-cconv                             (https://github.com/liseen/set-cconv-nginx-module">liseen/set-cconv-nginx-module
+
+#mod_a[""]=""
+# Set hash                              (https://github.com/simpl/ngx_http_set_hash">simpl/ngx_http_set_hash
+
+#mod_a[""]=""
+# Set Lang                              (https://github.com/simpl/ngx_http_set_lang/downloads">simpl/ngx_http_set_lang/downloads
+
+#mod_a[""]=""
+# Sflow                                 (http://code.google.com/p/nginx-sflow-module/downloads/list">Download
+
+#mod_a[""]=""
+# Small light                           (https://github.com/cubicdaiya/ngx_small_light">cubicdaiya/ngx_small_light
+
+#mod_a[""]=""
+# Sorted-querystring                    (https://github.com/wandenberg/nginx-sorted-querystring-module">wandenberg/nginx-sorted-querystring-module
+
+#mod_a[""]=""
+# Sphinx2                               (https://github.com/reeteshranjan/sphinx2-nginx-module">reeteshranjan/sphinx2-nginx-module
+
+#mod_a[""]=""
+# Auth spnego                           (https://github.com/stnoonan/spnego-http-auth-nginx-module">stnoonan/spnego-http-auth-nginx-module
+
+#mod_a[""]=""
+# Static-etags                          (https://github.com/mikewest/nginx-static-etags">mikewest/nginx-static-etags
+
+#mod_a[""]=""
+# Statsd                                (https://github.com/zebrafishlabs/nginx-statsd">zebrafishlabs/nginx-statsd
+
+#mod_a[""]=""
+# Sticky                                (https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz">nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz
+
+#mod_a[""]=""
+# Subrange                              (https://github.com/Qihoo360/ngx_http_subrange_module">Qihoo360/ngx_http_subrange_module
+
+#mod_a[""]=""
+# Substitutions                         (https://github.com/yaoweibin/ngx_http_substitutions_filter_module">yaoweibin/ngx_http_substitutions_filter_module
+
+#mod_a[""]=""
+# Summarizer                            (https://github.com/reeteshranjan/summarizer-nginx-module">reeteshranjan/summarizer-nginx-module
+
+#mod_a[""]=""
+# Supervisord                           (http://labs.frickle.com/nginx_ngx_supervisord">Download
+
+#mod_a[""]=""
+# Sysguard                              (https://github.com/alibaba/nginx-http-sysguard">alibaba/nginx-http-sysguard
+
+#mod_a[""]=""
+# Tcp_proxy                             (https://github.com/yaoweibin/nginx_tcp_proxy_module">yaoweibin/nginx_tcp_proxy_module
+
+#mod_a[""]=""
+# Testcookie                            (https://github.com/kyprizel/testcookie-nginx-module">kyprizel/testcookie-nginx-module
+
+#mod_a[""]=""
+# Types_filter                          (https://github.com/flygoast/ngx_http_types_filter">flygoast/ngx_http_types_filter
+
+#mod_a[""]=""
+# Unzip                                 (https://github.com/youzee/nginx-unzip-module">youzee/nginx-unzip-module
+
+#mod_a[""]=""
+# Upload                                (https://github.com/vkholodkov/nginx-upload-module">vkholodkov/nginx-upload-module
+
+#mod_a[""]=""
+# URL                                   (https://github.com/vozlt/nginx-module-url">vozlt/nginx-module-url
+
+#mod_a[""]=""
+# User Agent                            (https://github.com/alibaba/nginx-http-user-agent">alibaba/nginx-http-user-agent
+
+#mod_a[""]=""
+# Video thumbextractor                  (https://github.com/wandenberg/nginx-video-thumbextractor-module">wandenberg/nginx-video-thumbextractor-module
+
+#mod_a[""]=""
+# VTS                                   (https://github.com/vozlt/nginx-module-vts">vozlt/nginx-module-vts
+
+#mod_a[""]=""
+# Zip                                   (https://github.com/evanmiller/mod_zip">evanmiller/mod_zip
 
 inherit eutils ssl-cert toolchain-funcs perl-module flag-o-matic user versionator
 
@@ -556,7 +700,6 @@ RDEPEND="http-cache? ( dev-libs/openssl )
 	ssl? ( dev-libs/openssl )
 
 	nginx_modules_http_geoip? ( dev-libs/geoip )
-	nginx_modules_http_drizzle? ( dev-db/drizzle )
 	nginx_modules_http_gunzip? ( sys-libs/zlib )
 	nginx_modules_http_gzip? ( sys-libs/zlib )
 	nginx_modules_http_gzip_static? ( sys-libs/zlib )
@@ -572,6 +715,7 @@ RDEPEND="http-cache? ( dev-libs/openssl )
 		luajit? ( dev-lang/luajit ) )
 	nginx_modules_external_auth_pam? ( virtual/pam )
 	nginx_modules_external_metrics? ( dev-libs/yajl )
+	nginx_modules_external_drizzle? ( dev-db/drizzle )
 	nginx_modules_external_dav_ext? ( dev-libs/expat )
 	nginx_modules_external_modsecurity? ( dev-libs/libxml2
 		dev-libs/apr-util
