@@ -1,7 +1,12 @@
-﻿# Distributed under the terms of the GNU General Public License v2
+# Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
 
+#mogilefs modules removed as not working. mogilefs had no releases since 2010. 
+#nchan need upstream report about fixing trailing spaces in Makefile.
+#push
+#upstream_check
+#Drizzle modules removed as not working. Drizzle had no releases since 2012. 
 
 GENTOO_DEPEND_ON_PERL="no"
 
@@ -42,30 +47,6 @@ mod_p["echo"]="${mod_pn["echo"]}-${mod_sha["echo"]}"
 mod_uri["echo"]="https://github.com/${mod_a["echo"]}/${mod_pn["echo"]}/archive/${mod_sha["echo"]}.tar.gz"
 mod_wd["echo"]="${WORKDIR}/${mod_p["echo"]}"
 mod_doc["echo"]="README.markdown"
-
-# Array var (https://github.com/openresty/array-var-nginx-module)
-# ngx_devel_kit_required
-# mod_a["array-var"]="openresty"
-# mod_pn["array-var"]="array-var-nginx-module"
-# mod_pv["array-var"]="0.04"
-# mod_sha["array-var"]="735e74a524334b3d2647c2818710a0a80d35c927"
-# mod_lic["array-var"]="BSD-2"
-# mod_p["array-var"]="${mod_pn["array-var"]}-${mod_sha["array-var"]}"
-# mod_uri["array-var"]="https://github.com/${mod_a["array-var"]}/${mod_pn["array-var"]}/archive/${mod_sha["array-var"]}.tar.gz"
-# mod_wd["array-var"]="${WORKDIR}/${mod_p["array-var"]}"
-# mod_doc["array-var"]="README.markdown"
-
-# # # Stream-echo (https://github.com/openresty/stream-echo-nginx-module) 
-# more undefined references to `ngx_stream_core_module' follow
-# mod_a["stream-echo"]="openresty"
-# mod_pn["stream-echo"]="stream-echo-nginx-module"
-# # mod_pv["stream-echo"]=""
-# mod_sha["stream-echo"]="a3a518c66dcbde1f856dde48dc8f5a43b172a51f"
-# mod_lic["stream-echo"]="BSD-2"
-# mod_p["stream-echo"]="${mod_pn["stream-echo"]}-${mod_sha["stream-echo"]}"
-# mod_uri["stream-echo"]="https://github.com/${mod_a["stream-echo"]}/${mod_pn["stream-echo"]}/archive/${mod_sha["stream-echo"]}.tar.gz"
-# mod_wd["stream-echo"]="${WORKDIR}/${mod_p["stream-echo"]}"
-# mod_doc["stream-echo"]="README.markdown"
 
 # encrypted-session-nginx-module (https://github.com/openresty/encrypted-session-nginx-module)
 mod_a["encrypted-session"]="openresty"
@@ -111,7 +92,6 @@ mod_uri["rds-json"]="https://github.com/${mod_a["rds-json"]}/${mod_pn["rds-json"
 mod_wd["rds-json"]="${WORKDIR}/${mod_p["rds-json"]}"
 mod_doc["rds-json"]="README.md"
 
-
 # Redis2 (https://github.com/openresty/redis2-nginx-module)
 mod_a["redis2"]="openresty"
 mod_pn["redis2"]="redis2-nginx-module"
@@ -123,17 +103,6 @@ mod_uri["redis2"]="https://github.com/${mod_a["redis2"]}/${mod_pn["redis2"]}/arc
 mod_wd["redis2"]="${WORKDIR}/${mod_p["redis2"]}"
 mod_doc["redis2"]="README.markdown"
 
-# Replace-filter (https://github.com/openresty/replace-filter-nginx-module)
-# checking for agentzh's sregex library in /usr/local/
-# mod_a["replace-filter"]="openresty"
-# mod_pn["replace-filter"]="replace-filter-nginx-module"
-# # mod_pv[""]=""
-# mod_sha["replace-filter"]="4b7758f904eb1e49fc7f4b351ac9794d1722657c"
-# mod_lic["replace-filter"]="BSD-2"
-# mod_p["replace-filter"]="${mod_pn["replace-filter"]}-${mod_sha["replace-filter"]}"
-# mod_uri["replace-filter"]="https://github.com/${mod_a["replace-filter"]}/${mod_pn["replace-filter"]}/archive/${mod_sha["replace-filter"]}.tar.gz"
-# mod_wd["replace-filter"]="${WORKDIR}/${mod_p["replace-filter"]}"
-# mod_doc["replace-filter"]="README.markdown"
 
 # Set-misc (https://github.com/openresty/set-misc-nginx-module)
 mod_a["set-misc"]="openresty"
@@ -363,15 +332,48 @@ mod_wd["sticky"]="${WORKDIR}/${mod_p["sticky"]}"
 mod_doc["sticky"]="README.md Changelog.txt"
 
 # AJP (https://github.com/yaoweibin/nginx_ajp_module)
-mod_a["ajp"]="yaoweibin"
-mod_pn["ajp"]="nginx_ajp_module"
-mod_pv["ajp"]="0.3.0"
-mod_sha["ajp"]="bf6cd93f2098b59260de8d494f0f4b1f11a84627"
-mod_lic["ajp"]="BSD-2"
-mod_p["ajp"]="${mod_pn["ajp"]}-${mod_sha["ajp"]}"
-mod_uri["ajp"]="https://github.com/${mod_a["ajp"]}/${mod_pn["ajp"]}/archive/${mod_sha["ajp"]}.tar.gz"
-mod_wd["ajp"]="${WORKDIR}/${mod_p["ajp"]}"
-mod_doc["ajp"]="README"
+# mod_a["ajp"]="yaoweibin"
+# mod_pn["ajp"]="nginx_ajp_module"
+# mod_pv["ajp"]="0.3.0"
+# mod_sha["ajp"]="bf6cd93f2098b59260de8d494f0f4b1f11a84627"
+# mod_lic["ajp"]="BSD-2"
+# mod_p["ajp"]="${mod_pn["ajp"]}-${mod_sha["ajp"]}"
+# mod_uri["ajp"]="https://github.com/${mod_a["ajp"]}/${mod_pn["ajp"]}/archive/${mod_sha["ajp"]}.tar.gz"
+# mod_wd["ajp"]="${WORKDIR}/${mod_p["ajp"]}"
+# mod_doc["ajp"]="README"
+
+# Audio Track for HTTP Live Streaming   (https://github.com/flavioribeiro/nginx-audio-track-for-hls-module")
+mod_a["live_audio_track"]="flavioribeiro"
+mod_pn["live_audio_track"]="nginx-audio-track-for-hls-module"
+mod_pv["live_audio_track"]="0.2"
+mod_sha["live_audio_track"]="84f79f70ac9752deb263d777308e9d667ae34e57"
+mod_lic["live_audio_track"]="GPL"
+mod_p["live_audio_track"]="${mod_pn["live_audio_track"]}-${mod_sha["live_audio_track"]}"
+mod_uri["live_audio_track"]="https://github.com/${mod_a["live_audio_track"]}/${mod_pn["live_audio_track"]}/archive/${mod_sha["live_audio_track"]}.tar.gz"
+mod_wd["live_audio_track"]="${WORKDIR}/${mod_p["live_audio_track"]}"
+mod_doc["live_audio_track"]="README.md"
+
+# HTTP Digest Authentication            (https://github.com/atomx/nginx-http-auth-digest)
+mod_a["auth_digest"]="atomx"
+mod_pn["auth_digest"]="nginx-http-auth-digest"
+mod_pv["auth_digest"]="0"
+mod_sha["auth_digest"]="0df65340e2b9cad7ab01a3c92bcb5dc34b1f70b6"
+mod_lic["auth_digest"]="GPL"
+mod_p["auth_digest"]="${mod_pn["auth_digest"]}-${mod_sha["auth_digest"]}"
+mod_uri["auth_digest"]="https://github.com/${mod_a["auth_digest"]}/${mod_pn["auth_digest"]}/archive/${mod_sha["auth_digest"]}.tar.gz"
+mod_wd["auth_digest"]="${WORKDIR}/${mod_p["auth_digest"]}"
+mod_doc["auth_digest"]="readme.rst"
+
+# Aws _auth                             (https://github.com/anomalizer/ngx_aws_auth)
+mod_a["aws_auth"]="anomalizer"
+mod_pn["aws_auth"]="ngx_aws_auth"
+mod_pv["aws_auth"]="1.1.1"
+mod_sha["aws_auth"]="1c4d97dbe086ffbc24868d186dc2e89afa645b8f"
+mod_lic["aws_auth"]="FreeBSD"
+mod_p["aws_auth"]="${mod_pn["aws_auth"]}-${mod_sha["aws_auth"]}"
+mod_uri["aws_auth"]="https://github.com/${mod_a["aws_auth"]}/${mod_pn["aws_auth"]}/archive/${mod_sha["aws_auth"]}.tar.gz"
+mod_wd["aws_auth"]="${WORKDIR}/${mod_p["aws_auth"]}"
+mod_doc["aws_auth"]="README.md"
 
 ####################################
 #####
@@ -394,255 +396,853 @@ mod_doc["ajp"]="README"
 ##      ##        ######            ########        ######
 ##      
 ############################################################################
-#mod_a[""]=""
-#mod_pn[""]=""
-#mod_pv[""]=""
-#mod_sha[""]=""
-#mod_lic[""]=""
-#mod_p[""]="${mod_pn["ndk"]}-${mod_pv["ndk"]}"
-#mod_uri[""]="https://github.com/${mod_a["ndk"]}/${mod_pn["ndk"]}/archive/v${mod_pv["ndk"]}.tar.gz"
-#mod_wd[""]="${WORKDIR}/${mod_p["ndk"]}"
-#mod_doc[""]="README README_AUTO_LIB"
 
-#mod_a["Live_audio_track"]="flavioribeiro"
-# Audio Track for HTTP Live Streaming   (https://github.com/flavioribeiro/nginx-audio-track-for-hls-module")
+# mod_a[""]=""
+# HTTP auth_request_module             (http://mdounin.ru/hg/ngx_http_auth_request_module)
 
-#mod_a[""]=""
-# HTTP Digest Authentication            (https://github.com/atomx/nginx-http-auth-digest)
-
-#mod_a[""]=""
-# HTTP _auth_request_module             (http://mdounin.ru/hg/ngx_http_auth_request_module)
-
-#mod_a[""]=""
-# Auto _lib                             (https://github.com/simpl/ngx_auto_lib)
-
-#mod_a[""]=""
-# Aws _auth                             (https://github.com/anomalizer/ngx_aws_auth)
-
-#mod_a[""]=""
-# Circle Gif                            (https://github.com/evanmiller/nginx_circle_gif)
-
-#mod_a[""]=""
-# Nginx-backtrace                       (https://github.com/alibaba/nginx-backtrace)
-
-#mod_a[""]=""
-# Nchan                                 (https://github.com/slact/nchan">slact/nchan
-
-#mod_a[""]=""
-# Notice                                (https://github.com/kr/nginx-notice">kr/nginx-notice
-
-#mod_a[""]=""
-# Ocsp proxy                            (https://github.com/kyprizel/nginx_ocsp_proxy-module">kyprizel/nginx_ocsp_proxy-module
-
-#mod_a[""]=""
-# Openssl-version                       (https://github.com/apcera/nginx-openssl-version">apcera/nginx-openssl-version
-
-#mod_a[""]=""
 # Owner Match                           (https://heiher.info/1755.html">Download
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
 
-#mod_a[""]=""
+
+# # Circle Gif                            (https://github.com/evanmiller/nginx_circle_gif)
+# #  error: the Circle GIF addon requires the ImageMagick library.
+# mod_a["circle_gif"]="evanmiller"
+# mod_pn["circle_gif"]="nginx_circle_gif"
+# mod_pv["circle_gif"]="0"
+# mod_sha["circle_gif"]="f7b6b5c5c916befe792fc12f5f79f31056af945a"
+# mod_lic["circle_gif"]="GPL"
+# mod_p["circle_gif"]="${mod_pn["circle_gif"]}-${mod_sha["circle_gif"]}"
+# mod_uri["circle_gif"]="https://github.com/${mod_a["circle_gif"]}/${mod_pn["circle_gif"]}/archive/${mod_sha["circle_gif"]}.tar.gz"
+# mod_wd["circle_gif"]="${WORKDIR}/${mod_p["circle_gif"]}"
+# mod_doc["circle_gif"]="README"
+
+
+# Nginx-backtrace                       (https://github.com/alibaba/nginx-backtrace)
+mod_a["backtrace"]="alibaba"
+mod_pn["backtrace"]="nginx-backtrace"
+mod_pv["backtrace"]="0"
+mod_sha["backtrace"]="e163a0263fb8f3041b383577a9cc3df0307f507f"
+mod_lic["backtrace"]="GPL"
+mod_p["backtrace"]="${mod_pn["backtrace"]}-${mod_sha["backtrace"]}"
+mod_uri["backtrace"]="https://github.com/${mod_a["backtrace"]}/${mod_pn["backtrace"]}/archive/${mod_sha["backtrace"]}.tar.gz"
+mod_wd["backtrace"]="${WORKDIR}/${mod_p["backtrace"]}"
+mod_doc["backtrace"]="README.markdown"
+
+# Ocsp proxy                            (https://github.com/kyprizel/nginx_ocsp_proxy-module">kyprizel/nginx_ocsp_proxy-module
+mod_a["ocsp_proxy"]="kyprizel"
+mod_pn["ocsp_proxy"]="nginx_ocsp_proxy-module"
+mod_pv["ocsp_proxy"]="0"
+mod_sha["ocsp_proxy"]="8e978ef3b33882eab83615dc8d515bd1c8b72d63"
+mod_lic["ocsp_proxy"]="GPL"
+mod_p["ocsp_proxy"]="${mod_pn["ocsp_proxy"]}-${mod_sha["ocsp_proxy"]}"
+mod_uri["ocsp_proxy"]="https://github.com/${mod_a["ocsp_proxy"]}/${mod_pn["ocsp_proxy"]}/archive/${mod_sha["ocsp_proxy"]}.tar.gz"
+mod_wd["ocsp_proxy"]="${WORKDIR}/${mod_p["ocsp_proxy"]}"
+mod_doc["ocsp_proxy"]="README.md"
+
+# Openssl-version                       (https://github.com/apcera/nginx-openssl-version">apcera/nginx-openssl-version
+# mod_a[""]="apcera"
+# mod_pn[""]="nginx-openssl-version"
+# mod_pv[""]="0.04"
+# mod_sha[""]="65fc09ef685c21fa837ebe12484790525a88981f"
+# mod_lic[""]=""
+
+
 # PHP Session                           (https://github.com/replay/ngx_http_php_session">replay/ngx_http_php_session
+mod_a["php_session"]="replay"
+mod_pn["php_session"]="ngx_http_php_session"
+mod_pv["php_session"]="0.3"
+mod_sha["php_session"]="30f69b3bbe319fa5dca5cca8ce5030cbd988ad06"
+mod_lic["php_session"]="GPL"
+mod_p["php_session"]="${mod_pn["php_session"]}-${mod_sha["php_session"]}"
+mod_uri["php_session"]="https://github.com/${mod_a["php_session"]}/${mod_pn["php_session"]}/archive/${mod_sha["php_session"]}.tar.gz"
+mod_wd["php_session"]="${WORKDIR}/${mod_p["php_session"]}"
+mod_doc["php_session"]="README.md"
 
-#mod_a[""]=""
 # Php memcache standard balancer        (https://github.com/replay/ngx_http_php_memcache_standard_balancer">replay/ngx_http_php_memcache_standard_balancer
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
 
-#mod_a[""]=""
 # Postgres                              (http://labs.frickle.com/nginx_ngx_postgres">Download
+# mod_a[""]=""
 
-#mod_a[""]=""
 # Pubcookie                             (http://www.vanko.me/book/page/pubcookie-module-nginx">Download
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
 
-#mod_a[""]=""
 # Clojure                               (https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
+# adding module in /var/tmp/portage/www-servers/nginx-1.9.9/work/nginx-clojure-8a09dc109c1dd248f9694ef1f62f9cab2a495242
+# ./configure: error: no /var/tmp/portage/www-servers/nginx-1.9.9/work/nginx-clojure-8a09dc109c1dd248f9694ef1f62f9cab2a495242/config was found
+# /var/tmp/portage/www-servers/nginx-1.9.9/work/nginx-clojure-8a09dc109c1dd248f9694ef1f62f9cab2a495242/
+# mod_a["clojure"]="nginx-clojure"
+# mod_pn["clojure"]="nginx-clojure"
+# mod_pv["clojure"]="0.4.3"
+# mod_sha["clojure"]="8a09dc109c1dd248f9694ef1f62f9cab2a495242"
+# mod_lic["clojure"]="BSD"
+# mod_p["clojure"]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri["clojure"]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd["clojure"]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc["clojure"]="README.md"
 
-#mod_a[""]=""
 # Upstream Consistent Hash              (https://github.com/replay/ngx_http_consistent_hash">replay/ngx_http_consistent_hash
+# mod_a[""]="replay"
+# mod_pn[""]="ngx_http_consistent_hash"
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
 
-#mod_a[""]=""
-# Upstream Domain Resolve               (https://github.com/wdaike/ngx_upstream_jdomain/">wdaike/ngx_upstream_jdomain/
+# Upstream Domain Resolve               (https://github.com/wdaike/ngx_upstream_jdomain/
+# mod_a[""]="wdaike"
+# mod_pn[""]="ngx_upstream_jdomain"
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
 
-#mod_a[""]=""
-# Upstream Fair Balancer                (https://github.com/gnosek/nginx-upstream-fair">gnosek/nginx-upstream-fair
+# Upstream Fair Balancer                (https://github.com/gnosek/nginx-upstream-fair
+# mod_a[""]="gnosek"
+# mod_pn[""]="nginx-upstream-fair"
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
 
-#mod_a[""]=""
-# Dynamic-etags                         (https://github.com/kali/nginx-dynamic-etags">kali/nginx-dynamic-etags
+# Dynamic-etags                         (https://github.com/kali/nginx-dynamic-etags
+# mod_a[""]="kali"
+# mod_pn[""]="nginx-dynamic-etags"
+# mod_pv[""]="0"
+# mod_sha[""]="dc1ef31e36ea53af0928bc8f5a9fca35d2debd8f"
+# mod_lic[""]="GPL"
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Dyups                                 (https://github.com/yzprofile/ngx_http_dyups_module">yzprofile/ngx_http_dyups_module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Enhanced memcached                    (https://github.com/bpaquet/ngx_http_enhanced_memcached_module">bpaquet/ngx_http_enhanced_memcached_module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Eval                                  (https://github.com/vkholodkov/nginx-eval-module">vkholodkov/nginx-eval-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Ey-balancer                           (https://github.com/ezmobius/nginx-ey-balancer">ezmobius/nginx-ey-balancer
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Foot Filter                           (https://github.com/alibaba/nginx-http-footer-filter">alibaba/nginx-http-footer-filter
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Footer if filter                      (https://github.com/flygoast/ngx_http_footer_if_filter/">flygoast/ngx_http_footer_if_filter/
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Form Input                            (https://github.com/calio/form-input-nginx-module">calio/form-input-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Geoip2                                (https://github.com/leev/ngx_http_geoip2_module">leev/ngx_http_geoip2_module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Gridfs                                (https://github.com/mdirolf/nginx-gridfs">mdirolf/nginx-gridfs
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Groovy                                (https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # HTTP Healthcheck                      (https://github.com/cep21/healthcheck_nginx_upstreams">cep21/healthcheck_nginx_upstreams
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # HTTP accounting                       (https://github.com/Lax/ngx_http_accounting_module">Lax/ngx_http_accounting_module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Iconv                                 (https://github.com/calio/iconv-nginx-module">calio/iconv-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Internal redirect                     (https://github.com/flygoast/ngx_http_internal_redirect/">flygoast/ngx_http_internal_redirect/
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Ip2location                           (https://github.com/chrislim2888/ip2location-nginx">chrislim2888/ip2location-nginx
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Java                                  (https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # JS                                    (https://github.com/peter-leonov/ngx_http_js_module#readme">peter-leonov/ngx_http_js_module#readme
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Upstream Ketama CHash                 (https://github.com/flygoast/ngx_http_upstream_ketama_chash/releases/">flygoast/ngx_http_upstream_ketama_chash/releases/
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Limit upload rate                     (https://github.com/cfsego/limit_upload_rate">cfsego/limit_upload_rate
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Limit upstream                        (https://github.com/cfsego/nginx-limit-upstream/">cfsego/nginx-limit-upstream/
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Log if                                (https://github.com/cfsego/ngx_log_if/">cfsego/ngx_log_if/
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Log ZMQ                               (https://github.com/sapo/nginx-log-zmq/">sapo/nginx-log-zmq/
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Lower upper case                      (https://github.com/replay/ngx_http_lower_upper_case">replay/ngx_http_lower_upper_case
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Md5 filter                            (https://github.com/kainswor/nginx_md5_filter">kainswor/nginx_md5_filter
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Memc                                  (https://github.com/openresty/memc-nginx-module">openresty/memc-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Mongo                                 (https://github.com/simpl/ngx_mongo">simpl/ngx_mongo
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # HTTP rDNS                             (https://github.com/flant/nginx-http-rdns">flant/nginx-http-rdns
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # HTTP Redis                            (http://people.FreeBSD.ORG/~osa/ngx_http_redis-0.3.5.tar.gz">Download
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
+
 # Rooboo                                (https://github.com/yuri-gushin/Roboo/downloads">yuri-gushin/Roboo/downloads
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # RRD Graph                             (https://github.com/evanmiller/mod_rrd_graph">evanmiller/mod_rrd_graph
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Sass                                  (https://github.com/mneudert/sass-nginx-module">mneudert/sass-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Secure Download                       (https://github.com/replay/ngx_http_secure_download">replay/ngx_http_secure_download
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Selective cache purge 	        (https://github.com/wandenberg/nginx-selective-cache-purge-module">wandenberg/nginx-selective-cache-purge-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Set-cconv                             (https://github.com/liseen/set-cconv-nginx-module">liseen/set-cconv-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Set hash                              (https://github.com/simpl/ngx_http_set_hash">simpl/ngx_http_set_hash
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Set Lang                              (https://github.com/simpl/ngx_http_set_lang/downloads">simpl/ngx_http_set_lang/downloads
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Sflow                                 (http://code.google.com/p/nginx-sflow-module/downloads/list">Download
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Small light                           (https://github.com/cubicdaiya/ngx_small_light">cubicdaiya/ngx_small_light
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Sorted-querystring                    (https://github.com/wandenberg/nginx-sorted-querystring-module">wandenberg/nginx-sorted-querystring-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Sphinx2                               (https://github.com/reeteshranjan/sphinx2-nginx-module">reeteshranjan/sphinx2-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Auth spnego                           (https://github.com/stnoonan/spnego-http-auth-nginx-module">stnoonan/spnego-http-auth-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Static-etags                          (https://github.com/mikewest/nginx-static-etags">mikewest/nginx-static-etags
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Statsd                                (https://github.com/zebrafishlabs/nginx-statsd">zebrafishlabs/nginx-statsd
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Sticky                                (https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz">nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Subrange                              (https://github.com/Qihoo360/ngx_http_subrange_module">Qihoo360/ngx_http_subrange_module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Substitutions                         (https://github.com/yaoweibin/ngx_http_substitutions_filter_module">yaoweibin/ngx_http_substitutions_filter_module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Summarizer                            (https://github.com/reeteshranjan/summarizer-nginx-module">reeteshranjan/summarizer-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Supervisord                           (http://labs.frickle.com/nginx_ngx_supervisord">Download
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Sysguard                              (https://github.com/alibaba/nginx-http-sysguard">alibaba/nginx-http-sysguard
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Tcp_proxy                             (https://github.com/yaoweibin/nginx_tcp_proxy_module">yaoweibin/nginx_tcp_proxy_module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Testcookie                            (https://github.com/kyprizel/testcookie-nginx-module">kyprizel/testcookie-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Types_filter                          (https://github.com/flygoast/ngx_http_types_filter">flygoast/ngx_http_types_filter
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Unzip                                 (https://github.com/youzee/nginx-unzip-module">youzee/nginx-unzip-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Upload                                (https://github.com/vkholodkov/nginx-upload-module">vkholodkov/nginx-upload-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # URL                                   (https://github.com/vozlt/nginx-module-url">vozlt/nginx-module-url
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # User Agent                            (https://github.com/alibaba/nginx-http-user-agent">alibaba/nginx-http-user-agent
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Video thumbextractor                  (https://github.com/wandenberg/nginx-video-thumbextractor-module">wandenberg/nginx-video-thumbextractor-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # VTS                                   (https://github.com/vozlt/nginx-module-vts">vozlt/nginx-module-vts
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
 
-#mod_a[""]=""
 # Zip                                   (https://github.com/evanmiller/mod_zip">evanmiller/mod_zip
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+
+##
+## ToDo yet
+##
+# #Auto _lib                             (https://github.com/simpl/ngx_auto_lib)
+# # brake mod_sec
+# mod_a["auto_lib"]="simpl"
+# mod_pn["auto_lib"]="ngx_auto_lib"
+# mod_pv["auto_lib"]="0.01"
+# mod_sha["auto_lib"]="9c78d1a1213e895bbba802e6fcd446fd5087c219"
+# mod_lic["auto_lib"]="GPL"
+# mod_p["auto_lib"]="${mod_pn["auto_lib"]}-${mod_sha["auto_lib"]}"
+# mod_uri["auto_lib"]="https://github.com/${mod_a["auto_lib"]}/${mod_pn["auto_lib"]}/archive/${mod_sha["auto_lib"]}.tar.gz"
+# mod_wd["auto_lib"]="${WORKDIR}/${mod_p["auto_lib"]}"
+# mod_doc["auto_lib"]="README README_AUTO_LIB"
+
+# Array var (https://github.com/openresty/array-var-nginx-module)
+# ngx_devel_kit_required
+# mod_a["array-var"]="openresty"
+# mod_pn["array-var"]="array-var-nginx-module"
+# mod_pv["array-var"]="0.04"
+# mod_sha["array-var"]="735e74a524334b3d2647c2818710a0a80d35c927"
+# mod_lic["array-var"]="BSD-2"
+# mod_p["array-var"]="${mod_pn["array-var"]}-${mod_sha["array-var"]}"
+# mod_uri["array-var"]="https://github.com/${mod_a["array-var"]}/${mod_pn["array-var"]}/archive/${mod_sha["array-var"]}.tar.gz"
+# mod_wd["array-var"]="${WORKDIR}/${mod_p["array-var"]}"
+# mod_doc["array-var"]="README.markdown"
+
+# # # Stream-echo (https://github.com/openresty/stream-echo-nginx-module) 
+# more undefined references to `ngx_stream_core_module' follow
+# mod_a["stream-echo"]="openresty"
+# mod_pn["stream-echo"]="stream-echo-nginx-module"
+# # mod_pv["stream-echo"]=""
+# mod_sha["stream-echo"]="a3a518c66dcbde1f856dde48dc8f5a43b172a51f"
+# mod_lic["stream-echo"]="BSD-2"
+# mod_p["stream-echo"]="${mod_pn["stream-echo"]}-${mod_sha["stream-echo"]}"
+# mod_uri["stream-echo"]="https://github.com/${mod_a["stream-echo"]}/${mod_pn["stream-echo"]}/archive/${mod_sha["stream-echo"]}.tar.gz"
+# mod_wd["stream-echo"]="${WORKDIR}/${mod_p["stream-echo"]}"
+# mod_doc["stream-echo"]="README.markdown"
+
+# Replace-filter (https://github.com/openresty/replace-filter-nginx-module)
+# checking for agentzh's sregex library in /usr/local/
+# mod_a["replace-filter"]="openresty"
+# mod_pn["replace-filter"]="replace-filter-nginx-module"
+# # mod_pv[""]=""
+# mod_sha["replace-filter"]="4b7758f904eb1e49fc7f4b351ac9794d1722657c"
+# mod_lic["replace-filter"]="BSD-2"
+# mod_p["replace-filter"]="${mod_pn["replace-filter"]}-${mod_sha["replace-filter"]}"
+# mod_uri["replace-filter"]="https://github.com/${mod_a["replace-filter"]}/${mod_pn["replace-filter"]}/archive/${mod_sha["replace-filter"]}.tar.gz"
+# mod_wd["replace-filter"]="${WORKDIR}/${mod_p["replace-filter"]}"
+# mod_doc["replace-filter"]="README.markdown"
+
+# # Notice                                (https://github.com/kr/nginx-notice">kr/nginx-notice
+# /var/tmp/ccache/tmp/ngx_http_n.stdout.laptop.5972.QYZ5Cb.i:(.text+0xd9): undefined reference to `ngx_http_discard_body'
+# x86_64-pc-linux-gnu-clang-3.7: error: linker command failed with exit code 1 (use -v to see invocation)
+# objs/Makefile:481: recipe for target 'objs/nginx' failed
+# 
+# mod_a["notice"]="kr"
+# mod_pn["notice"]="nginx-notice"
+# mod_pv["notice"]="0"
+# mod_sha["notice"]="3c95966c14be46807133162485cc295141d7efd3"
+# mod_lic["notice"]="GPL"
+# mod_p["notice"]="${mod_pn["notice"]}-${mod_sha["notice"]}"
+# mod_uri["notice"]="https://github.com/${mod_a["notice"]}/${mod_pn["notice"]}/archive/${mod_sha["notice"]}.tar.gz"
+# mod_wd["notice"]="${WORKDIR}/${mod_p["notice"]}"
+# mod_doc["notice"]="README"
+
+
 
 inherit eutils ssl-cert toolchain-funcs perl-module flag-o-matic user versionator
 
