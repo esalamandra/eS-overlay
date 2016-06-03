@@ -1,0 +1,687 @@
+﻿####################################
+#####
+#####
+#####   https://www.nginx.com/resources/wiki/modules/
+#####
+#####
+####################################
+
+#mogilefs modules removed as not working. mogilefs had no releases since 2010.
+# nchan need upstream report about fixing trailing spaces in Makefile.
+# push
+# upstream_check
+# Drizzle modules removed as not working. Drizzle had no releases since 2012.
+# Zip https://github.com/evanmiller/mod_zip">evanmiller/mod_zip Not include becouse not support ssl
+# DynamicEtags not one source to help many old forks.
+# foot and if foot not tested by author since version Nginx 1.3
+
+############################################################################
+##
+##  ##########    ######            ########        ######
+##      ##       ########           ##    ####     ########
+##      ##      ####  ####          ##      ##    ####  ####
+##      ##      ##      ##          ##      ##    ##      ##
+##      ##      ##      ##          ##      ##    ##      ##
+##      ##      ####  ####          ##      ##    ####  ####
+##      ##       ########           ##    ####     ########
+##      ##        ######            ########        ######
+##
+############################################################################
+
+# mod_a[""]=""
+# HTTP auth_request_module             (http://mdounin.ru/hg/ngx_http_auth_request_module)
+
+# Owner Match                           (https://heiher.info/1755.html">Download
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+
+
+# # Circle Gif                            (https://github.com/evanmiller/nginx_circle_gif)
+# Bath path to ImageMagick in config
+# #  error: the Circle GIF addon requires the ImageMagick library.
+# mod_a["circle_gif"]="evanmiller"
+# mod_pn["circle_gif"]="nginx_circle_gif"
+# mod_pv["circle_gif"]="0"
+# mod_sha["circle_gif"]="f7b6b5c5c916befe792fc12f5f79f31056af945a"
+# mod_lic["circle_gif"]="GPL"
+# mod_p["circle_gif"]="${mod_pn["circle_gif"]}-${mod_sha["circle_gif"]}"
+# mod_uri["circle_gif"]="https://github.com/${mod_a["circle_gif"]}/${mod_pn["circle_gif"]}/archive/${mod_sha["circle_gif"]}.tar.gz"
+# mod_wd["circle_gif"]="${WORKDIR}/${mod_p["circle_gif"]}"
+# mod_doc["circle_gif"]="README"
+
+
+# Postgres                              (http://labs.frickle.com/nginx_ngx_postgres">Download
+# mod_a[""]=""
+
+# Pubcookie                             (http://www.vanko.me/book/page/pubcookie-module-nginx">Download
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+
+# Upstream Consistent Hash              (https://github.com/replay/ngx_http_consistent_hash">replay/ngx_http_consistent_hash
+# mod_a[""]="replay"
+# mod_pn[""]="ngx_http_consistent_hash"
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+
+# Upstream Domain Resolve               (https://github.com/wdaike/ngx_upstream_jdomain/
+# mod_a[""]="wdaike"
+# mod_pn[""]="ngx_upstream_jdomain"
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+
+# Upstream Fair Balancer                (https://github.com/gnosek/nginx-upstream-fair
+# mod_a[""]="gnosek"
+# mod_pn[""]="nginx-upstream-fair"
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+
+# Eval  https://github.com/vkholodkov/nginx-eval-module">vkholodkov/nginx-eval-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+
+# Geoip2                                (https://github.com/leev/ngx_http_geoip2_module">leev/ngx_http_geoip2_module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Gridfs                                (https://github.com/mdirolf/nginx-gridfs">mdirolf/nginx-gridfs
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Groovy                                (https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# HTTP Healthcheck                      (https://github.com/cep21/healthcheck_nginx_upstreams">cep21/healthcheck_nginx_upstreams
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# HTTP accounting                       (https://github.com/Lax/ngx_http_accounting_module">Lax/ngx_http_accounting_module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Iconv                                 (https://github.com/calio/iconv-nginx-module">calio/iconv-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Internal redirect                     (https://github.com/flygoast/ngx_http_internal_redirect/">flygoast/ngx_http_internal_redirect/
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Ip2location                           (https://github.com/chrislim2888/ip2location-nginx">chrislim2888/ip2location-nginx
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Java                                  (https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# JS                                    (https://github.com/peter-leonov/ngx_http_js_module#readme">peter-leonov/ngx_http_js_module#readme
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Upstream Ketama CHash                 (https://github.com/flygoast/ngx_http_upstream_ketama_chash/releases/">flygoast/ngx_http_upstream_ketama_chash/releases/
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Limit upload rate                     (https://github.com/cfsego/limit_upload_rate">cfsego/limit_upload_rate
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Limit upstream                        (https://github.com/cfsego/nginx-limit-upstream/">cfsego/nginx-limit-upstream/
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Log if                                (https://github.com/cfsego/ngx_log_if/">cfsego/ngx_log_if/
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Log ZMQ                               (https://github.com/sapo/nginx-log-zmq/">sapo/nginx-log-zmq/
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Lower upper case                      (https://github.com/replay/ngx_http_lower_upper_case">replay/ngx_http_lower_upper_case
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Md5 filter                            (https://github.com/kainswor/nginx_md5_filter">kainswor/nginx_md5_filter
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Memc                                  (https://github.com/openresty/memc-nginx-module">openresty/memc-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Mongo https://github.com/simpl/ngx_mongo">simpl/ngx_mongo
+# mod_a["mongo"]="simpl"
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# HTTP rDNS                             (https://github.com/flant/nginx-http-rdns">flant/nginx-http-rdns
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# HTTP Redis                            (http://people.FreeBSD.ORG/~osa/ngx_http_redis-0.3.5.tar.gz">Download
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+
+# Rooboo                                (https://github.com/yuri-gushin/Roboo/downloads">yuri-gushin/Roboo/downloads
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# RRD Graph                             (https://github.com/evanmiller/mod_rrd_graph">evanmiller/mod_rrd_graph
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Sass                                  (https://github.com/mneudert/sass-nginx-module">mneudert/sass-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+
+# Selective cache purge 	        (https://github.com/wandenberg/nginx-selective-cache-purge-module">wandenberg/nginx-selective-cache-purge-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Set-cconv                             (https://github.com/liseen/set-cconv-nginx-module">liseen/set-cconv-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Set hash                              (https://github.com/simpl/ngx_http_set_hash">simpl/ngx_http_set_hash
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+
+# Sflow                                 (http://code.google.com/p/nginx-sflow-module/downloads/list">Download
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Small light                           (https://github.com/cubicdaiya/ngx_small_light">cubicdaiya/ngx_small_light
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Sorted-querystring                    (https://github.com/wandenberg/nginx-sorted-querystring-module">wandenberg/nginx-sorted-querystring-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Sphinx2                               (https://github.com/reeteshranjan/sphinx2-nginx-module">reeteshranjan/sphinx2-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Static-etags                          (https://github.com/mikewest/nginx-static-etags">mikewest/nginx-static-etags
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Statsd                                (https://github.com/zebrafishlabs/nginx-statsd">zebrafishlabs/nginx-statsd
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Sticky                                (https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz">nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Subrange                              (https://github.com/Qihoo360/ngx_http_subrange_module">Qihoo360/ngx_http_subrange_module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Substitutions                         (https://github.com/yaoweibin/ngx_http_substitutions_filter_module">yaoweibin/ngx_http_substitutions_filter_module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Summarizer                            (https://github.com/reeteshranjan/summarizer-nginx-module">reeteshranjan/summarizer-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+
+# Sysguard                              (https://github.com/alibaba/nginx-http-sysguard">alibaba/nginx-http-sysguard
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Tcp_proxy                             (https://github.com/yaoweibin/nginx_tcp_proxy_module">yaoweibin/nginx_tcp_proxy_module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Testcookie                            (https://github.com/kyprizel/testcookie-nginx-module">kyprizel/testcookie-nginx-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Types_filter                          (https://github.com/flygoast/ngx_http_types_filter">flygoast/ngx_http_types_filter
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Unzip                                 (https://github.com/youzee/nginx-unzip-module">youzee/nginx-unzip-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Upload                                (https://github.com/vkholodkov/nginx-upload-module">vkholodkov/nginx-upload-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# URL                                   (https://github.com/vozlt/nginx-module-url">vozlt/nginx-module-url
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# User Agent                            (https://github.com/alibaba/nginx-http-user-agent">alibaba/nginx-http-user-agent
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+# Video thumbextractor                  (https://github.com/wandenberg/nginx-video-thumbextractor-module">wandenberg/nginx-video-thumbextractor-module
+# mod_a[""]=""
+# mod_pn[""]=""
+# mod_pv[""]=""
+# mod_sha[""]=""
+# mod_lic[""]=""
+# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc[""]="README.md"
+
+##
+## ToDo yet
+##
+# #Auto _lib                             (https://github.com/simpl/ngx_auto_lib)
+# # brake mod_sec
+# mod_a["auto_lib"]="simpl"
+# mod_pn["auto_lib"]="ngx_auto_lib"
+# mod_pv["auto_lib"]="0.01"
+# mod_sha["auto_lib"]="9c78d1a1213e895bbba802e6fcd446fd5087c219"
+# mod_lic["auto_lib"]="GPL"
+# mod_p["auto_lib"]="${mod_pn["auto_lib"]}-${mod_sha["auto_lib"]}"
+# mod_uri["auto_lib"]="https://github.com/${mod_a["auto_lib"]}/${mod_pn["auto_lib"]}/archive/${mod_sha["auto_lib"]}.tar.gz"
+# mod_wd["auto_lib"]="${WORKDIR}/${mod_p["auto_lib"]}"
+# mod_doc["auto_lib"]="README README_AUTO_LIB"
+
+# Array var (https://github.com/openresty/array-var-nginx-module)
+# ngx_devel_kit_required
+# mod_a["array-var"]="openresty"
+# mod_pn["array-var"]="array-var-nginx-module"
+# mod_pv["array-var"]="0.04"
+# mod_sha["array-var"]="735e74a524334b3d2647c2818710a0a80d35c927"
+# mod_lic["array-var"]="BSD-2"
+# mod_p["array-var"]="${mod_pn["array-var"]}-${mod_sha["array-var"]}"
+# mod_uri["array-var"]="https://github.com/${mod_a["array-var"]}/${mod_pn["array-var"]}/archive/${mod_sha["array-var"]}.tar.gz"
+# mod_wd["array-var"]="${WORKDIR}/${mod_p["array-var"]}"
+# mod_doc["array-var"]="README.markdown"
+
+# # # Stream-echo (https://github.com/openresty/stream-echo-nginx-module)
+# more undefined references to `ngx_stream_core_module' follow
+# mod_a["stream-echo"]="openresty"
+# mod_pn["stream-echo"]="stream-echo-nginx-module"
+# # mod_pv["stream-echo"]=""
+# mod_sha["stream-echo"]="a3a518c66dcbde1f856dde48dc8f5a43b172a51f"
+# mod_lic["stream-echo"]="BSD-2"
+# mod_p["stream-echo"]="${mod_pn["stream-echo"]}-${mod_sha["stream-echo"]}"
+# mod_uri["stream-echo"]="https://github.com/${mod_a["stream-echo"]}/${mod_pn["stream-echo"]}/archive/${mod_sha["stream-echo"]}.tar.gz"
+# mod_wd["stream-echo"]="${WORKDIR}/${mod_p["stream-echo"]}"
+# mod_doc["stream-echo"]="README.markdown"
+
+# Replace-filter (https://github.com/openresty/replace-filter-nginx-module)
+# checking for agentzh's sregex library in /usr/local/
+# mod_a["replace-filter"]="openresty"
+# mod_pn["replace-filter"]="replace-filter-nginx-module"
+# # mod_pv[""]=""
+# mod_sha["replace-filter"]="4b7758f904eb1e49fc7f4b351ac9794d1722657c"
+# mod_lic["replace-filter"]="BSD-2"
+# mod_p["replace-filter"]="${mod_pn["replace-filter"]}-${mod_sha["replace-filter"]}"
+# mod_uri["replace-filter"]="https://github.com/${mod_a["replace-filter"]}/${mod_pn["replace-filter"]}/archive/${mod_sha["replace-filter"]}.tar.gz"
+# mod_wd["replace-filter"]="${WORKDIR}/${mod_p["replace-filter"]}"
+# mod_doc["replace-filter"]="README.markdown"
+
+# # Notice                                (https://github.com/kr/nginx-notice">kr/nginx-notice
+# /var/tmp/ccache/tmp/ngx_http_n.stdout.laptop.5972.QYZ5Cb.i:(.text+0xd9): undefined reference to `ngx_http_discard_body'
+# x86_64-pc-linux-gnu-clang-3.7: error: linker command failed with exit code 1 (use -v to see invocation)
+# objs/Makefile:481: recipe for target 'objs/nginx' failed
+#
+# mod_a["notice"]="kr"
+# mod_pn["notice"]="nginx-notice"
+# mod_pv["notice"]="0"
+# mod_sha["notice"]="3c95966c14be46807133162485cc295141d7efd3"
+# mod_lic["notice"]="GPL"
+# mod_p["notice"]="${mod_pn["notice"]}-${mod_sha["notice"]}"
+# mod_uri["notice"]="https://github.com/${mod_a["notice"]}/${mod_pn["notice"]}/archive/${mod_sha["notice"]}.tar.gz"
+# mod_wd["notice"]="${WORKDIR}/${mod_p["notice"]}"
+# mod_doc["notice"]="README"
+
+# Clojure                               (https://github.com/nginx-clojure/nginx-clojure">nginx-clojure/nginx-clojure
+# adding module in /var/tmp/portage/www-servers/nginx-1.9.9/work/nginx-clojure-8a09dc109c1dd248f9694ef1f62f9cab2a495242
+# ./configure: error: no /var/tmp/portage/www-servers/nginx-1.9.9/work/nginx-clojure-8a09dc109c1dd248f9694ef1f62f9cab2a495242/config was found
+# /var/tmp/portage/www-servers/nginx-1.9.9/work/nginx-clojure-8a09dc109c1dd248f9694ef1f62f9cab2a495242/
+# mod_a["clojure"]="nginx-clojure"
+# mod_pn["clojure"]="nginx-clojure"
+# mod_pv["clojure"]="0.4.3"
+# mod_sha["clojure"]="8a09dc109c1dd248f9694ef1f62f9cab2a495242"
+# mod_lic["clojure"]="BSD"
+# mod_p["clojure"]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
+# mod_uri["clojure"]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
+# mod_wd["clojure"]="${WORKDIR}/${mod_p["clojure"]}"
+# mod_doc["clojure"]="README.md"
