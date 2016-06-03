@@ -1,4 +1,3 @@
-
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
@@ -14,12 +13,12 @@ declare -A mods
 # Nginx Development Kit (NDK) (https://github.com/simpl/ngx_devel_kit)
 mod_a["ndk"]="simpl"
 mod_pn["ndk"]="ngx_devel_kit"
-mod_pv["ndk"]="0.2.19"
+mod_pv["ndk"]="0.3.0"
 mod_lic["ndk"]="BSD"
 mod_p["ndk"]="${mod_pn["ndk"]}-${mod_pv["ndk"]}"
 mod_uri["ndk"]="https://github.com/${mod_a["ndk"]}/${mod_pn["ndk"]}/archive/v${mod_pv["ndk"]}.tar.gz"
 mod_wd["ndk"]="${WORKDIR}/${mod_p["ndk"]}"
-mod_doc["ndk"]="README README_AUTO_LIB"
+mod_doc["ndk"]="README.md README_AUTO_LIB"
 
 # Lua (https://github.com/openresty/lua-nginx-module)
 mod_a["lua"]="openresty"
@@ -54,7 +53,7 @@ mod_uri["encrypted-session"]="https://github.com/${mod_a["encrypted-session"]}/$
 mod_wd["encrypted-session"]="${WORKDIR}/${mod_p["encrypted-session"]}"
 mod_doc["encrypted-session"]="README.md"
 
-# Lua-upstream (https://github.com/openresty/lua-upstream-nginx-module) 
+# Lua-upstream (https://github.com/openresty/lua-upstream-nginx-module)
 # mod_a["echo"]="openresty"
 # mod_pn[""]="lua-upstream-nginx-module"
 # mod_pv[""]=""
@@ -65,7 +64,7 @@ mod_doc["encrypted-session"]="README.md"
 # mod_wd[""]="${WORKDIR}/${mod_p[""]}"
 # mod_doc[""]="README.markdown"
 
-# Rds-csv (https://github.com/openresty/rds-csv-nginx-module) 
+# Rds-csv (https://github.com/openresty/rds-csv-nginx-module)
 mod_a["rds-csv"]="openresty"
 mod_pn["rds-csv"]="rds-csv-nginx-module"
 # mod_pv[""]=""
@@ -76,7 +75,7 @@ mod_uri["rds-csv"]="https://github.com/${mod_a["rds-csv"]}/${mod_pn["rds-csv"]}/
 mod_wd["rds-csv"]="${WORKDIR}/${mod_p["rds-csv"]}"
 mod_doc["rds-csv"]="README.md"
 
-# Rds-json (https://github.com/openresty/rds-json-nginx-module) 
+# Rds-json (https://github.com/openresty/rds-json-nginx-module)
 mod_a["rds-json"]="openresty"
 mod_pn["rds-json"]="rds-json-nginx-module"
 # mod_pv[""]=""
@@ -135,7 +134,7 @@ mod_doc["xss"]="README.md"
 # Fancy Index (https://github.com/aperezdc/ngx-fancyindex)
 mod_a["fancyindex"]="aperezdc"
 mod_pn["fancyindex"]="ngx-fancyindex"
-mod_pv["fancyindex"]="0.3.5"
+mod_pv["fancyindex"]="0.3.6"
 mod_lic["fancyindex"]="BSD-2"
 mod_p["fancyindex"]="${mod_pn["fancyindex"]}-${mod_pv["fancyindex"]}"
 mod_uri["fancyindex"]="https://github.com/${mod_a["fancyindex"]}/${mod_pn["fancyindex"]}/archive/v${mod_pv["fancyindex"]}.tar.gz"
@@ -183,24 +182,24 @@ mod_wd["headers_more"]="${WORKDIR}/${mod_p["headers_more"]}"
 mod_doc["headers_more"]="README.markdown"
 
 # Push (http://pushmodule.slact.net)
-mod_a["push"]="slact"
-mod_pn["push"]="nchan"
-mod_pv["push"]="0.931"
-mod_sha["push"]="f0efe980bfb072265fb4333183e1106d8df23851"
-mod_lic["push"]="MIT"
-mod_p["push"]="${mod_pn["push"]}-${mod_sha["push"]}"
-mod_uri["push"]="https://github.com/${mod_a["push"]}/${mod_pn["push"]}/archive/${mod_sha["push"]}.tar.gz"
-mod_wd["push"]="${WORKDIR}/${mod_p["push"]}"
+#mod_a["push"]="slact"
+#mod_pn["push"]="nchan"
+#mod_pv["push"]="0.99.15"
+##mod_sha["push"]="f0efe980bfb072265fb4333183e1106d8df23851"
+#mod_lic["push"]="MIT"
+#mod_p["push"]="${mod_pn["push"]}-${mod_sha["push"]}"
+#mod_uri["push"]="https://github.com/${mod_a["push"]}/${mod_pn["push"]}/archive/${mod_sha["push"]}.tar.gz"
+#mod_wd["push"]="${WORKDIR}/${mod_p["push"]}"
 
-# Cache Purge (http://labs.frickle.com/nginx_ngx_cache_purge)
-mod_a["cache_purge"]="FRiCKLE"
-mod_pn["cache_purge"]="ngx_cache_purge"
-mod_pv["cache_purge"]="2.3"
-mod_lic["cache_purge"]="BSD-2"
-mod_p["cache_purge"]="${mod_pn["cache_purge"]}-${mod_pv["cache_purge"]}"
-mod_uri["cache_purge"]="https://github.com/${mod_a["cache_purge"]}/${mod_pn["cache_purge"]}/archive/${mod_pv["cache_purge"]}.tar.gz"
-mod_wd["cache_purge"]="${WORKDIR}/${mod_p["cache_purge"]}"
-mod_doc["cache_purge"]="README.md CHANGES TODO.md"
+# # Cache Purge (http://labs.frickle.com/nginx_ngx_cache_purge)
+# mod_a["cache_purge"]="FRiCKLE"
+# mod_pn["cache_purge"]="ngx_cache_purge"
+# mod_pv["cache_purge"]="2.3"
+# mod_lic["cache_purge"]="BSD-2"
+# mod_p["cache_purge"]="${mod_pn["cache_purge"]}-${mod_pv["cache_purge"]}"
+# mod_uri["cache_purge"]="https://github.com/${mod_a["cache_purge"]}/${mod_pn["cache_purge"]}/archive/${mod_pv["cache_purge"]}.tar.gz"
+# mod_wd["cache_purge"]="${WORKDIR}/${mod_p["cache_purge"]}"
+# mod_doc["cache_purge"]="README.md CHANGES TODO.md"
 
 # SlowFS Cache (http://labs.frickle.com/nginx_ngx_slowfs_cache)
 mod_a["slowfs_cache"]="FRiCKLE"
@@ -247,7 +246,7 @@ mod_doc["metrics"]="README.md"
 # NAXSI (https://github.com/nbs-system/naxsi)
 mod_a["naxsi"]="nbs-system"
 mod_pn["naxsi"]="naxsi"
-mod_pv["naxsi"]="0.54"
+mod_pv["naxsi"]="0.55rc2"
 mod_lic["naxsi"]="GPL-2+"
 mod_p["naxsi"]="${mod_pn["naxsi"]}-${mod_pv["naxsi"]}"
 mod_uri["naxsi"]="https://github.com/${mod_a["naxsi"]}/${mod_pn["naxsi"]}/archive/${mod_pv["naxsi"]}.tar.gz"
@@ -298,12 +297,15 @@ mod_doc["concat"]="README.md"
 # ModSecurity (https://www.modsecurity.org/download.html)
 mod_a["modsecurity"]="modsecurity"
 mod_pn["modsecurity"]="modsecurity"
-mod_pv["modsecurity"]="2.9.0"
+mod_pv["modsecurity"]="2.9.1"
 mod_lic["modsecurity"]="Apache-2.0"
 mod_p["modsecurity"]="${mod_pn["modsecurity"]}-${mod_pv["modsecurity"]}"
-mod_uri["modsecurity"]="https://www.modsecurity.org/tarball/${mod_pv[modsecurity]}/${mod_p["modsecurity"]}.tar.gz"
+# mod_uri["modsecurity"]="https://www.modsecurity.org/tarball/${mod_pv[modsecurity]}/${mod_p["modsecurity"]}.tar.gz"
+mod_uri["modsecurity"]="https://www.modsecurity.org/tarball/2.9.1/modsecurity-2.9.1.tar.gz"
 mod_wd["modsecurity"]="${WORKDIR}/${mod_p["modsecurity"]}/nginx/${mod_pn["modsecurity"]}"
 mod_doc["modsecurity"]="README.TXT CHANGES"
+# https://www.modsecurity.org/tarball/2.9.1-RC1/modsecurity-2.9.1-RC1.tar.gz
+# https://www.modsecurity.org/tarball/2.9.1-rc1/modsecurity-2.9.1-RC1.tar.gz
 
 # Push Stream (https://github.com/wandenberg/nginx-push-stream-module)
 mod_a["push_stream"]="wandenberg"
@@ -370,16 +372,6 @@ mod_uri["aws_auth"]="https://github.com/${mod_a["aws_auth"]}/${mod_pn["aws_auth"
 mod_wd["aws_auth"]="${WORKDIR}/${mod_p["aws_auth"]}"
 mod_doc["aws_auth"]="README.md"
 
-# Nginx-backtrace                       (https://github.com/alibaba/nginx-backtrace)
-mod_a["backtrace"]="alibaba"
-mod_pn["backtrace"]="nginx-backtrace"
-mod_pv["backtrace"]="0"
-mod_sha["backtrace"]="e163a0263fb8f3041b383577a9cc3df0307f507f"
-mod_lic["backtrace"]="GPL"
-mod_p["backtrace"]="${mod_pn["backtrace"]}-${mod_sha["backtrace"]}"
-mod_uri["backtrace"]="https://github.com/${mod_a["backtrace"]}/${mod_pn["backtrace"]}/archive/${mod_sha["backtrace"]}.tar.gz"
-mod_wd["backtrace"]="${WORKDIR}/${mod_p["backtrace"]}"
-mod_doc["backtrace"]="README.markdown"
 
 # Ocsp proxy                            (https://github.com/kyprizel/nginx_ocsp_proxy-module">kyprizel/nginx_ocsp_proxy-module
 mod_a["ocsp_proxy"]="kyprizel"
@@ -402,6 +394,17 @@ mod_p["php_session"]="${mod_pn["php_session"]}-${mod_sha["php_session"]}"
 mod_uri["php_session"]="https://github.com/${mod_a["php_session"]}/${mod_pn["php_session"]}/archive/${mod_sha["php_session"]}.tar.gz"
 mod_wd["php_session"]="${WORKDIR}/${mod_p["php_session"]}"
 mod_doc["php_session"]="README.md"
+
+# VTS  (https://github.com/vozlt/nginx-module-vts">vozlt/nginx-module-vts
+mod_a["vts"]="vozlt"
+mod_pn["vts"]="nginx-module-vts"
+mod_pv["vts"]="0.1.8"
+mod_sha["vts"]="995c20a6539c3c24ad3f891cfa3590918f19641c"
+mod_lic["vts"]="GPL"
+mod_p["vts"]="${mod_pn["vts"]}-${mod_sha["vts"]}"
+mod_uri["vts"]="https://github.com/${mod_a["vts"]}/${mod_pn["vts"]}/archive/${mod_sha["vts"]}.tar.gz"
+mod_wd["vts"]="${WORKDIR}/${mod_p["vts"]}"
+mod_doc["vts"]="README.md"
 
 
 inherit eutils ssl-cert toolchain-funcs perl-module flag-o-matic user versionator
@@ -430,12 +433,14 @@ mods[standard]="access auth_basic autoindex browser charset empty_gif fastcgi
 	geo gzip limit_conn limit_req map memcached proxy referer rewrite
 	scgi ssi split_clients userid uwsgi slice"
 
-mods[optional]="addition auth_request dav degradation flv geoip gunzip gzip_static 
+mods[optional]="addition auth_request dav degradation flv geoip gunzip gzip_static
 	image_filter mp4 perl random_index realip secure_link ssl v2 stub_status sub xslt"
 
 mods[mail]="imap pop3 smtp"
 
-IUSE="+aio +http +http-cache +pcre +poll +select
+
+
+IUSE="+aio +http +http-cache +pcre +poll +select +dynamic
 	cpp_test debug google_perftools ipv6 libatomic luajit pcre-jit rtsig
 	ssl threads vim-syntax"
 
@@ -638,6 +643,14 @@ src_configure() {
 		http_enabled=1
 	fi
 
+	if use dynamic ; then
+			use nginx_modules_http_xslt || nginx_configure+="  --with-http_xslt_module=dynamic"
+			use nginx_modules_http_image_filter || nginx_configure+="  --with-http_image_filter_module=dynamic"
+			use nginx_modules_http_geoip || nginx_configure+=" --with-http_geoip_module=dynamic"
+			use nginx_modules_http_perl || nginx_configure+=" --with-http_perl_module=dynamic"
+#		use nginx_modules_http_mail"
+	fi
+
 	if [[ $http_enabled ]] ; then
 		use http-cache || nginx_configure+=" --without-http-cache"
 		use ssl && nginx_configure+=" --with-http_ssl_module"
@@ -688,6 +701,7 @@ src_configure() {
 		$(use_with select select_module) \
 		${nginx_configure} || die "configure failed"
 
+		echo ${nginx_configure} >> nginx.parm
 	# A purely cosmetic change that makes nginx -V more readable.
 	# This can be good if people outside the gentoo community would
 	# troubleshoot and question the user setup.

@@ -135,7 +135,7 @@ mod_doc["xss"]="README.md"
 # Fancy Index (https://github.com/aperezdc/ngx-fancyindex)
 mod_a["fancyindex"]="aperezdc"
 mod_pn["fancyindex"]="ngx-fancyindex"
-mod_pv["fancyindex"]="0.3.5"
+mod_pv["fancyindex"]="0.3.6"
 mod_lic["fancyindex"]="BSD-2"
 mod_p["fancyindex"]="${mod_pn["fancyindex"]}-${mod_pv["fancyindex"]}"
 mod_uri["fancyindex"]="https://github.com/${mod_a["fancyindex"]}/${mod_pn["fancyindex"]}/archive/v${mod_pv["fancyindex"]}.tar.gz"
@@ -192,15 +192,15 @@ mod_p["push"]="${mod_pn["push"]}-${mod_sha["push"]}"
 mod_uri["push"]="https://github.com/${mod_a["push"]}/${mod_pn["push"]}/archive/${mod_sha["push"]}.tar.gz"
 mod_wd["push"]="${WORKDIR}/${mod_p["push"]}"
 
-# Cache Purge (http://labs.frickle.com/nginx_ngx_cache_purge)
-mod_a["cache_purge"]="FRiCKLE"
-mod_pn["cache_purge"]="ngx_cache_purge"
-mod_pv["cache_purge"]="2.3"
-mod_lic["cache_purge"]="BSD-2"
-mod_p["cache_purge"]="${mod_pn["cache_purge"]}-${mod_pv["cache_purge"]}"
-mod_uri["cache_purge"]="https://github.com/${mod_a["cache_purge"]}/${mod_pn["cache_purge"]}/archive/${mod_pv["cache_purge"]}.tar.gz"
-mod_wd["cache_purge"]="${WORKDIR}/${mod_p["cache_purge"]}"
-mod_doc["cache_purge"]="README.md CHANGES TODO.md"
+# # Cache Purge (http://labs.frickle.com/nginx_ngx_cache_purge)
+# mod_a["cache_purge"]="FRiCKLE"
+# mod_pn["cache_purge"]="ngx_cache_purge"
+# mod_pv["cache_purge"]="2.3"
+# mod_lic["cache_purge"]="BSD-2"
+# mod_p["cache_purge"]="${mod_pn["cache_purge"]}-${mod_pv["cache_purge"]}"
+# mod_uri["cache_purge"]="https://github.com/${mod_a["cache_purge"]}/${mod_pn["cache_purge"]}/archive/${mod_pv["cache_purge"]}.tar.gz"
+# mod_wd["cache_purge"]="${WORKDIR}/${mod_p["cache_purge"]}"
+# mod_doc["cache_purge"]="README.md CHANGES TODO.md"
 
 # SlowFS Cache (http://labs.frickle.com/nginx_ngx_slowfs_cache)
 mod_a["slowfs_cache"]="FRiCKLE"
@@ -298,12 +298,15 @@ mod_doc["concat"]="README.md"
 # ModSecurity (https://www.modsecurity.org/download.html)
 mod_a["modsecurity"]="modsecurity"
 mod_pn["modsecurity"]="modsecurity"
-mod_pv["modsecurity"]="2.9.0"
+mod_pv["modsecurity"]="2.9.1-RC1"
 mod_lic["modsecurity"]="Apache-2.0"
 mod_p["modsecurity"]="${mod_pn["modsecurity"]}-${mod_pv["modsecurity"]}"
-mod_uri["modsecurity"]="https://www.modsecurity.org/tarball/${mod_pv[modsecurity]}/${mod_p["modsecurity"]}.tar.gz"
+# mod_uri["modsecurity"]="https://www.modsecurity.org/tarball/${mod_pv[modsecurity]}/${mod_p["modsecurity"]}.tar.gz"
+mod_uri["modsecurity"]="https://www.modsecurity.org/tarball/2.9.1-rc1/modsecurity-2.9.1-RC1.tar.gz"
 mod_wd["modsecurity"]="${WORKDIR}/${mod_p["modsecurity"]}/nginx/${mod_pn["modsecurity"]}"
 mod_doc["modsecurity"]="README.TXT CHANGES"
+# https://www.modsecurity.org/tarball/2.9.1-RC1/modsecurity-2.9.1-RC1.tar.gz
+# https://www.modsecurity.org/tarball/2.9.1-rc1/modsecurity-2.9.1-RC1.tar.gz
 
 # Push Stream (https://github.com/wandenberg/nginx-push-stream-module)
 mod_a["push_stream"]="wandenberg"
@@ -402,6 +405,17 @@ mod_p["php_session"]="${mod_pn["php_session"]}-${mod_sha["php_session"]}"
 mod_uri["php_session"]="https://github.com/${mod_a["php_session"]}/${mod_pn["php_session"]}/archive/${mod_sha["php_session"]}.tar.gz"
 mod_wd["php_session"]="${WORKDIR}/${mod_p["php_session"]}"
 mod_doc["php_session"]="README.md"
+
+# VTS  (https://github.com/vozlt/nginx-module-vts">vozlt/nginx-module-vts
+mod_a["vts"]="vozlt"
+mod_pn["vts"]="nginx-module-vts"
+mod_pv["vts"]="0.1.8"
+mod_sha["vts"]="995c20a6539c3c24ad3f891cfa3590918f19641c"
+mod_lic["vts"]="GPL"
+mod_p["vts"]="${mod_pn["vts"]}-${mod_sha["vts"]}"
+mod_uri["vts"]="https://github.com/${mod_a["vts"]}/${mod_pn["vts"]}/archive/${mod_sha["vts"]}.tar.gz"
+mod_wd["vts"]="${WORKDIR}/${mod_p["vts"]}"
+mod_doc["vts"]="README.md"
 
 
 inherit eutils ssl-cert toolchain-funcs perl-module flag-o-matic user versionator
