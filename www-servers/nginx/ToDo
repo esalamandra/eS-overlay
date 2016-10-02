@@ -462,16 +462,6 @@
 # mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
 # mod_doc[""]="README.md"
 
-# Sticky                                (https://bitbucket.org/nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz">nginx-goodies/nginx-sticky-module-ng/get/master.tar.gz
-# mod_a[""]=""
-# mod_pn[""]=""
-# mod_pv[""]=""
-# mod_sha[""]=""
-# mod_lic[""]=""
-# mod_p[""]="${mod_pn["clojure"]}-${mod_sha["clojure"]}"
-# mod_uri[""]="https://github.com/${mod_a["clojure"]}/${mod_pn["clojure"]}/archive/${mod_sha["clojure"]}.tar.gz"
-# mod_wd[""]="${WORKDIR}/${mod_p["clojure"]}"
-# mod_doc[""]="README.md"
 
 # Subrange                              (https://github.com/Qihoo360/ngx_http_subrange_module">Qihoo360/ngx_http_subrange_module
 # mod_a[""]=""
